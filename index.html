@@ -9,16 +9,18 @@
     <script src="lib/nouislider.min.js"></script>
     <script src="lib/dragscroll.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script src="script/scrollers.js" defer></script>
+    <script src="script/sliders.js" defer></script>
+
+    <!-- nado poprobovat -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/defaults.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/hero.css">
-    
-    <script src="script/scrollers.js" defer></script>
-
-    <script src="script/sliders.js" defer></script>
-
 
 </head>
 <body>
@@ -26,7 +28,7 @@
 
         <header>
 
-            <input type="checkbox" name="" id="header-menu" hidden>
+            <input type="checkbox" name="" id="header-menu" hidden >
 
             <div class="header-wrap">
 
@@ -218,41 +220,37 @@
 
                     </div>
 
-
-
-
                 </div>
-
                 
-                
-            </div>
-
-            <div class="section-hero-additional-banner content">
-                <nav>
-                    <ul>
-                        <li><a href="#">Расположение</a></li>
-                        <li><a href="#">Преимущества</a></li>
-                        <li><a href="#">Квартиры</a></li>
-                        <li><a href="#">Машиноместа</a></li>
-                        <li><a href="#">Коммерческая недвижимость</a></li>
-                        <li><a href="#">Редкие форматы</a></li>
-                        <li><a href="#">Как купить</a></li>
-
-                        <li>
-                            <button>
-                                <a href="#">Выбрать квартиру</a>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
             </div>
 
         </section>
 
+        
+        <div class="section-hero-additional-banner full">
+            <nav class="content">
+                <ul>
+                    <li><a  class="current-link" href="#">Расположение</a></li>
+                    <li><a href="#">Преимущества</a></li>
+                    <li><a href="#">Квартиры</a></li>
+                    <li><a href="#">Машиноместа</a></li>
+                    <li><a href="#">Коммерческая недвижимость</a></li>
+                    <li><a href="#">Редкие форматы</a></li>
+                    <li><a href="#">Как купить</a></li>
 
-        <p>CONTENT</p>
+                    <li>
+                        <button>
+                            <a href="#">Выбрать квартиру</a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         
+        <section class="section-complex"></section>
+
+
         <section class="section-location"></section>
 
         
@@ -287,6 +285,9 @@
 
         
         <section class="section-footer"></section>
+
+
+        <footer></footer>
 
     </main>
 </body>

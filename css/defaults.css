@@ -27,7 +27,6 @@ body,html {
 
         font-family: 'Oswald', sans-serif;
 
-        overflow-x: clip;
 
          /* width */
 
@@ -117,6 +116,10 @@ h5 {
     position: relative;
 }
 
+.full {
+    width: 100vw;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -133,7 +136,6 @@ main > * {
   
 main {
     width: 100vw;
-    overflow: none;
 }
 
 

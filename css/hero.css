@@ -12,7 +12,7 @@
   height: 37.125rem;
   background-size: cover;
   background-position: center;
-  position: static;
+  position: relative;
 }
 
 .section-hero img {
@@ -24,7 +24,7 @@
 
 .hero-promo-banner {
   background-color: var(--clr-primary-800);
-  padding: 0.9375rem 1.5rem;
+  padding: 0.9375rem 1.5rem ;
   color: var(--clr-greyscale-000);
   display: flex;
   flex-direction: column;
@@ -60,6 +60,7 @@
   font-weight: 400;
   line-height: 28px;
   margin-top: 3px;
+  max-width: 13ch;
 }
 
 .hero-headings {
@@ -114,6 +115,17 @@
   white-space: nowrap;
 }
 
+@media screen and (max-width: 1280px) { 
+
+  .section-hero img {
+    left: unset;
+    right: 0;
+    bottom: 15%;
+    height: 29.6875rem;
+    /* transform: translateX(-60%) translateY(10%); */
+  }
+}
+
 @media screen and (max-width: 1000px) {
 
   .hero-headings {
@@ -134,12 +146,6 @@
     background-position: 20%;
   }
 
-  .section-hero img {
-    height: 29.6875rem;
-    right: 80px;
-    left: unset;
-    /* transform: translateX(-60%) translateY(10%); */
-  }
 
   .hero-bottom-banner {
     padding: 2.3125rem 2.625rem;
@@ -177,6 +183,15 @@
 
 @media screen and (max-width: 680px) { 
 
+  .hero-promo-banner h4 {
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 3px;
+    max-width: 222ch;
+  }
+
   .hero-promo-banner {
     top: 0;
     left: 0;
@@ -202,12 +217,43 @@
   }
 
   .hero-headings h5 {
-    max-width: 25ch;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 23px;
-  letter-spacing: 0em;
-  text-align: left;
+    max-width: 18ch;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 1.125rem;
+  }
+
+  .hero-headings h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+    letter-spacing: 0.05em;
+    max-width: 12ch;
+    margin-bottom: 1.125rem;
+  }
+
+  .hero-headings h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .hero-promo-banner h4 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .hero-bottom-banner {
+    padding: 1.375rem 1.125rem 2.25rem 1.125rem;
+  }
+
+  .hero-bottom-banner-right {
+    flex-direction: column;
+    row-gap: 1rem;
 
   }
 
@@ -217,8 +263,19 @@
   .section-hero img {
     height: 29.6875rem;
     right: unset;
-    left:  20%;    
-    transform: translateX(0%) translateY(10%) scaleX(0.75);
+    left: 0px;
+    left: 125px;
+    left: clamp(0rem, -10.4167rem + 52.0833vw, 7.8125rem);
+    bottom: 48px;   
+    transform: translateX(0%) translateY(10%) scaleX(0.55);
   }
+
+  .section-hero {
+    background-image: url('../img/hero/hero_bg.webp');
+    background-size: fill;
+    background-position: 30%;
+    position: relative;
+  }
+  
 
 }

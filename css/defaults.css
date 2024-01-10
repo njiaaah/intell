@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:wght@400;700&display=swap');
+
+body {
+        /* colors */
+
+        --clr-primary-000: #EAC899;
+        --clr-primary-200: #F5DDBA;
+        --clr-primary-400: #EAC899;
+        --clr-primary-600: #D6B07B;
+        --clr-primary-800: #B6915D;
+        --clr-primary-1000: #927752;
+
+        --clr-navy-blue: #5F797A; 
+        --clr-navy-blue-light: #38626B; 
+        --clr-navy-blue-dark: #124147; 
+
+        --clr-greyscale-000:#FFFFFF;
+        --clr-greyscale-200: #F2F4F8;
+        --clr-greyscale-400: #AEBCC6;
+        --clr-greyscale-600: #7E8385;
+        --clr-greyscale-800: #1E2020;
+
+        /*   'PT Sans' & 'Oswald' */
+
+        font-family: 'Oswald', sans-serif;
+
+        overflow-x: clip;
+
+         /* width */
+
+         --content-width-1280: 1120px; /* 1220px */
+         --content-width-720: 648px; /* 653.33px ? */
+         --content-width-320: 287px; /* 304px ? */
+         --content-width: clamp(var(--content-width-720), 2.5714rem + 84.2857vw, var(--content-width-1280));
+         
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        --content-width: clamp(var(--content-width-320), -0.1125rem + 90.25vw, var(--content-width-720));
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #1E2020;
+}
+
+
+main > * {
+    width: 100%;
+  }
+  
+main {
+    width: 100vw;
+    overflow: none;
+}

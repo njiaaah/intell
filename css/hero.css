@@ -1,0 +1,224 @@
+/* bg */
+
+.section-hero-wrap {
+  position: relative;
+  height: 100%;
+  width: var(--content-width);
+  margin: 0 auto;
+}
+
+.section-hero {
+  background-image: url('../img/hero/hero_bg.webp');
+  height: 37.125rem;
+  background-size: cover;
+  background-position: center;
+  position: static;
+}
+
+.section-hero img {
+  height: 100%;
+  position: absolute;
+  left: 47%;
+  user-select: none;
+}
+
+.hero-promo-banner {
+  background-color: var(--clr-primary-800);
+  padding: 0.9375rem 1.5rem;
+  color: var(--clr-greyscale-000);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: absolute;
+  right: 0;
+  top: 45%;
+  width: 240px;
+}
+
+.hero-promo-banner > div > span {
+  font-family: PT Sans;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 17px;
+  color: var(--clr-navy-blue-dark);
+}
+
+.hero-promo-banner > a {
+  display: flex;
+  align-items: center;
+  font-family: PT Sans;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1rem;
+  gap: .5rem;
+  color: var(--clr-greyscale-000)
+}
+
+.hero-promo-banner h4 {
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 3px;
+}
+
+.hero-headings {
+  position: absolute;
+  top: 13.3875rem;
+  color: var(--clr-greyscale-000);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-headings h1 {
+  text-transform: uppercase;
+  max-width: 19ch;
+  margin-top: .5rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-headings > div {
+  gap: 2rem;
+}
+
+.hero-bottom-banner {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  background-color: var(--clr-primary-800);
+  bottom: 0;
+}
+
+.hero-bottom-banner {
+  padding: 2.3125rem 6.0625rem 2.3125rem 2.625rem ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-bottom-banner-right {
+  display: flex;
+  gap: 40px;
+}
+
+.hero-bottom-banner-right > div {
+  display: flex;
+  gap: 10px;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.hero-bottom-banner-left > *,
+.hero-bottom-banner-right > div > span {
+  color: var(--clr-greyscale-000);
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .hero-headings {
+    top: 7rem;
+    
+  }
+
+  .hero-headings > div {
+    display: block;
+  }
+
+  .hero-headings > div > button {
+    margin-top: 1.25rem ;
+  }
+
+  .section-hero {
+    height: 37.125rem;
+    background-position: 20%;
+  }
+
+  .section-hero img {
+    height: 29.6875rem;
+    right: 80px;
+    left: unset;
+    /* transform: translateX(-60%) translateY(10%); */
+  }
+
+  .hero-bottom-banner {
+    padding: 2.3125rem 2.625rem;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    bottom: -5rem;
+    height: fit-content;
+  }
+
+  .hero-bottom-banner-right {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .hero-promo-banner {
+    top: unset;
+    bottom: 50px;
+    z-index: 10;
+    right: 2.5rem;
+    /* pretty please */
+    /* border-radius: 4px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+}
+
+@media screen and (max-width: 800px) { 
+  .hero-bottom-banner {
+    padding: 2.3125rem 1.25rem;
+  }
+
+  .hero-bottom-banner-right {
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 680px) { 
+
+  .hero-promo-banner {
+    top: 0;
+    left: 0;
+    bottom: unset;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    padding-inline: 0;
+    box-shadow:  0 0 0 100vmax var(--clr-primary-800);
+    clip-path: inset(0 -100vmax);
+  }
+
+  .hero-promo-banner span {
+    display: none;
+    width: fit-content;
+  } 
+
+  .hero-promo-banner > a {
+    display: inline;
+  }
+
+  .hero-headings h5 {
+    max-width: 25ch;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  }
+
+}
+
+@media screen and (max-width: 560px) { 
+  .section-hero img {
+    height: 29.6875rem;
+    right: unset;
+    left:  20%;    
+    transform: translateX(0%) translateY(10%) scaleX(0.75);
+  }
+
+}

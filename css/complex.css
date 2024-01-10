@@ -1,0 +1,302 @@
+
+.section-complex-wrap .genplan{
+  background-image:  url('../img/hero/genplan.webp');
+  height: 34rem;
+  margin-top: 2.8125rem ;
+  position: relative;
+background-size: cover fill;
+  background-position: 90%;
+}
+
+
+.genplan-pricing ,
+.genplan-house-info,
+.genplan-house-info > span {
+  position: absolute;
+}
+
+.genplan-pricing {
+  width: 256px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--clr-primary-800);
+  padding: 1.5625rem;
+}
+
+.genplan-pricing h4,
+.genplan-house-info h4 {
+  color: var(--clr-greyscale-000);
+  max-width: 13ch;
+  text-align: right;
+  min-width: 100%;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--clr-greyscale-000);
+  margin-bottom: 24px;
+}
+
+.genplan-pricing button {
+  outline: 2px solid #fff;
+  padding: 0.4688rem 1.5rem;
+}
+
+.genplan-pricing-table {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-bottom: 2rem;
+}
+.genplan-pricing-table > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.genplan-pricing-table > div span {
+  font-family: PT Sans;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.0625rem;
+  color: var(--clr-greyscale-000);
+}
+
+.genplan-house-info {
+  background-color: var(--clr-greyscale-000);;
+  top: 2.375rem;
+  right: 2rem;
+  padding: 2rem;
+  width: 256px;
+}
+
+.genplan-house-info h4 {
+  color: var(--clr-primary-800);
+  min-width: 100%;
+  display: block;
+}
+
+.genplan-house-info .genplan-pricing-table span:first-child {
+  color: var(--clr-primary-800);
+}
+.genplan-house-info .genplan-pricing-table span:last-child {
+  color: var(--clr-greyscale-600);
+}
+
+.genplan-house-info h4 {
+  border-bottom: 1px solid var(--clr-primary-800);
+  padding-bottom: 37px;
+}
+
+.genplan-circle-plus {
+  width: 64px;
+  aspect-ratio: 1;
+  background-color: var(--clr-navy-blue-dark);
+  display: grid;
+  place-items: center;
+  color: var(--clr-primary-600);
+  font-size: 2rem;
+  border-radius: 50%;
+  left: 0;
+  transform: translateX(-50%);
+  top: 66px;
+  cursor: pointer;
+}
+
+.genplan-circle-plus span {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 2px;
+  background-color: var(--clr-primary-600);
+}
+
+.genplan-circle-plus span:first-child {
+  transform: rotate(90deg);
+}
+
+.genplan-polish {
+  background-color: #E9EAEC;
+  padding: 6px 8px;
+  color: #81807C;
+  font-family: PT Sans;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.info-below {
+  display: flex;
+  gap: 2.125rem;
+  margin-top: 2.8125rem;
+}
+
+.info-below span {
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px; 
+  position: relative; 
+  color: var(--clr-navy-blue-light);
+}
+
+.info-below span:last-child {
+  margin-right: auto;
+  order: -1;
+}
+
+
+.info-below span::after {
+  content: '###';
+  font-family: PT Sans;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.0625rem;
+  color: var(--clr-greyscale-600);
+}
+
+.info-below span:nth-child(1) {
+  order: 0;
+}
+
+.info-below span:nth-child(3) {
+  order: 1;
+}
+
+.info-below span:nth-child(2) {
+  order: 4;
+}
+
+.info-below span:nth-child(4) {
+  order: 5;
+}
+
+.info-below span:nth-child(5) {
+  order: 0;
+}
+
+.info-below span:nth-child(6) {
+  order: 6;
+}
+
+.info-below span:nth-child(1)::after {
+  content: 'класс ЖК';
+}
+
+.info-below span:nth-child(2)::after {
+  content: 'машиноместо';
+}
+
+.info-below span:nth-child(3)::after {
+  content: 'корпуса';
+}
+
+.info-below span:nth-child(4)::after {
+  content: 'высота потолков';
+}
+
+.info-below span:nth-child(5)::after {
+  content: 'этажей';
+}
+
+.info-below span:nth-child(6)::after {
+  content: 'материал стен';
+}
+
+.info-below span:nth-child(7)::after {
+  content: 'квартир';
+}
+
+.info-below span:nth-child(8)::after {
+  content: 'Ввод в эксплуатацию';
+}
+.info-below span::before {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  display: inline-block;
+  position: absolute;
+  color: var(--clr-greyscale-600);
+  transform: translateY(calc(-100% - 9px));
+  white-space: nowrap;
+}
+
+.info-below span:nth-child(8)::before {
+  content: 'Ввод в эксплуатацию';
+}
+
+.info-below span:nth-child(1)::before {
+  content: 'Общая информация';
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .section-complex-wrap {
+    margin-top: 7rem;
+  }
+
+  .info-below {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: .85rem;
+    row-gap: 2.9375rem;
+  }
+
+  .info-below span:last-child {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .info-below {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+
+  .section-complex-wrap {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+
+  .genplan-house-info {
+    display: none;
+  }
+  .section-complex-wrap .genplan {
+    width: 100vw;
+    margin: 0 auto;
+    background-image: url('../img/hero/genplanmob.webp');
+    order: 2;
+    height: 300px;
+    background-size: cover;
+    background-position: center 20%;
+  }
+
+  .info-below {
+    order: 1;
+    width: var(--content-width);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2rem;
+  }
+
+
+  .genplan-pricing {
+    width: var(--content-width);
+    left: 50%;
+
+    transform: translateY(70%) translateX(-50%);
+  }
+
+
+  .info-below span{
+    order: unset !important;
+    line-height: 20px;
+    
+  }
+
+  .info-below span::before {
+    opacity: 0;
+  }
+  
+}

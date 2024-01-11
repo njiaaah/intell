@@ -23,6 +23,8 @@ body,html {
         --clr-greyscale-600: #81807C;
         --clr-greyscale-800: #1E2020;
 
+        --clr-heading-1: #3D4452;
+
         /*   'PT Sans' & 'Oswald' */
 
         font-family: 'Oswald', sans-serif;
@@ -145,5 +147,44 @@ main > * {
 main {
     width: 100vw;
 }
+
+.horizontal-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    overflow-x: auto;
+}
+
+.horizontalscroll::-webkit-scrollbar {
+    position: absolute;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.section-scrollabale-tabs {
+    gap: 20px;
+}
+
+.section-scrollabale-tabs label{
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--clr-greyscale-600);
+    position: relative;
+    padding-bottom: 12px;
+}
+
+
 
 

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/hero.css">
     <link rel="stylesheet" href="/css/complex.css">
+    <link rel="stylesheet" href="/css/location.css">
 
 </head>
 <body>
@@ -117,7 +118,7 @@
 
         </header>
 
-        <section class="section-hero">
+        <section class="section-hero" hidden>
 
 
             <div class="section-hero-wrap content">
@@ -251,7 +252,7 @@
         </div>
 
         
-        <section class="section-complex">
+        <section class="section-complex" hidden>
 
             <div class="section-complex-wrap content">
 
@@ -362,7 +363,45 @@
         </section>
 
 
-        <section class="section-location"></section>
+        <section class="section-location">
+
+            <div class="section-location-wrap content">
+
+                <h1>РАСПОЛОЖЕНИЕ 
+                    <div>
+                        <svg width="22" height="31" viewBox="0 0 22 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.28 11.4091C21.28 20.7443 13.5913 28.0823 11.3727 30.0055C11.0265 30.3055 10.5336 30.3055 10.1874 30.0055C7.96879 28.0823 0.280029 20.7443 0.280029 11.4091C0.280029 5.95455 3.56128 0.5 10.78 0.5C17.9988 0.5 21.28 5.95455 21.28 11.4091Z" fill="black"/>
+                            <circle cx="10.78" cy="11" r="4.5" fill="#B6915D"/>
+                            </svg>
+                            
+                        <span>г. Москва, Семеновская набережная, вл. 3, стр. 13А</span>
+                    </div>
+                </h1>
+
+                <input type="radio" name="section-location-radio" id="section-location-chb-01" checked>
+                <input type="radio" name="section-location-radio" id="section-location-chb-02">
+                <input type="radio" name="section-location-radio" id="section-location-chb-03">
+
+                <div class="horizontalscroll dragscroll hsb horizontal-scroller">
+
+                    <div class="section-scrollabale-tabs flex" >
+    
+                        <label for="section-location-chb-01" class="cursor-pointer section-scrollabale-tabs-selected nowrap">Транспортная доступность</label>
+        
+                        <label for="section-location-chb-02" class="cursor-pointer nowrap">Академическая среда</label>
+        
+                        <label for="section-location-chb-03" class="cursor-pointer nowrap">В окружении парков</label>
+        
+                    </div>
+    
+                </div>
+
+            </div>
+
+            
+
+
+        </section>
 
         
         <section class="section-advantages"></section>

@@ -1,0 +1,47 @@
+.section-location-wrap h1 {
+    margin-top: 4.625rem;
+    margin-bottom: 26px;
+    color: var(--clr-heading-1);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-location-wrap h1 div {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: end;
+    gap: 0.75rem;
+}
+
+.section-location-wrap h1 span {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    white-space: nowrap;
+}
+
+input[name="section-location-radio"] {
+    display: none;
+}
+
+#section-location-chb-01:checked ~ div .section-scrollabale-tabs label:nth-child(1) ,
+#section-location-chb-02:checked ~ div .section-scrollabale-tabs label:nth-child(2) ,
+#section-location-chb-03:checked ~ div .section-scrollabale-tabs label:nth-child(3) {
+    color: var(--clr-primary-800) ;
+}
+
+#section-location-chb-01:checked ~ div .section-scrollabale-tabs label:nth-child(1)::after ,
+#section-location-chb-02:checked ~ div .section-scrollabale-tabs label:nth-child(2)::after ,
+#section-location-chb-03:checked ~ div .section-scrollabale-tabs label:nth-child(3)::after {
+    content: '' ;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--clr-primary-800);
+}

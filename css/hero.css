@@ -127,6 +127,7 @@ header {
   height: 60px;
   position: sticky;
   top: 60px;
+  z-index: 20;
 }
 
 .section-hero-additional-banner nav ul {

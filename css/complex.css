@@ -258,6 +258,10 @@ background-size: cover fill;
     margin-top: 4rem;
   }
 
+  .section-complex {
+    margin-bottom: 17rem;
+  }
+
   .genplan-house-info {
     display: none;
   }
@@ -299,4 +303,11 @@ background-size: cover fill;
     opacity: 0;
   }
   
+}
+
+@media screen and (max-width: 560px) {
+  
+  .section-complex {
+    margin-bottom: 17rem;
+  }
 }

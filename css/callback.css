@@ -1,0 +1,146 @@
+.section-callback-wrap {
+    height: 400px;
+    width: min(927px, var(--content-width));
+    margin: 0 auto;
+    margin-top: 72px;
+}
+
+.section-callback-wrap h3 {
+    font-family: Oswald;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-primary-800);
+    margin-bottom: 19px;
+}
+
+.callback-body > img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+    width: clamp(25rem, -4.8103rem + 62.7586vw, 36.375rem);
+    aspect-ratio: 1.432;
+}
+
+.callback-body {
+    height: 261px;
+    background-color: var(--clr-primary-400);
+    position: relative;
+}
+
+.callback-body .bg-vectors {
+    opacity: .075;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.callback-body .bg-vectors svg {
+    min-height: 261px;
+    min-width: 82px;
+}
+
+.callback-body .callback-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+}
+
+.callback-content {
+    padding: 3.5rem 2.875rem ;
+}
+
+.callback-content form{
+    display: flex;
+    flex-direction: column;
+    width: 224px;
+}
+
+.callback-content form input {
+    margin-bottom: 19px;
+}
+
+.callback-content form button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.callback-content form input::placeholder,
+.callback-content form input{
+    --_color: var(--clr-greyscale-800);
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-bottom: 8px;
+    color: var( --_color);
+    border-bottom: 1px solid var( --_color);
+}
+
+.section-callback-wrap span{
+    display: block;
+    font-family: PT Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 8px;
+    color: var(--clr-greyscale-600);
+}
+
+
+@media screen and (max-width: 760px) {
+
+    .callback-body > img {
+        display: none;
+    }
+
+    .callback-content form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .callback-content form input::placeholder,
+    .callback-content form input    {
+    --_color: var(--clr-primary-800);
+    }   
+
+    
+    .section-callback-wrap span{
+        margin-top: 20px;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
+    .section-callback-wrap {
+        margin-top: 64px;
+    }
+
+    .section-callback-wrap h3 {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .section-callback-wrap h3 {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        max-width: 10ch;
+    }
+}

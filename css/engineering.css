@@ -1,0 +1,299 @@
+.section-engineering-wrap h1 {
+    font-family: Oswald;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: var(--clr-greyscale-800);
+    
+}
+
+.section-engineering-wrap {
+    margin-bottom: 78px;
+}
+
+#section-engineering-chb-01:checked ~ .horizontalscroll .section-scrollabale-tabs label:nth-child(1) ,
+#section-engineering-chb-02:checked ~ .horizontalscroll .section-scrollabale-tabs label:nth-child(2) {
+    color: var(--clr-primary-800);
+}
+
+#section-engineering-chb-01:checked ~ .horizontalscroll .section-scrollabale-tabs label:nth-child(1)::after ,
+#section-engineering-chb-02:checked ~ .horizontalscroll .section-scrollabale-tabs label:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--clr-primary-800);
+}
+
+input[name="section-engineering-radio"] {
+    display: none;
+}
+
+.section-engineering-grid > .img-wrap {
+    display: none;
+    
+}
+
+.section-engineering-grid > .img-wrap h3 {
+    color: var(--clr-greyscale-000);
+    font-family: Oswald;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 37px;
+    position: absolute;
+    left: 30px;
+    bottom: 60px;
+    max-width: 28ch;
+}
+
+.section-engineering-grid > .img-wrap img {
+    object-fit: cover;
+    height: 524px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#section-engineering-chb-01:checked ~ .section-engineering-grid > .img-wrap:nth-child(1) ,
+#section-engineering-chb-02:checked ~ .section-engineering-grid > .img-wrap:nth-child(2) {
+    display: block;
+}
+
+.section-engineering-grid {
+    display: flex;
+    margin-top: 1.5625rem;
+    gap: 1.875rem;
+}
+
+.enginneer-grid {
+    display: grid;
+    grid-template-columns: 160px 96px 160px;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+    height: 100%;
+    display: none;
+}
+
+.enginneer-grid > div {
+    position: relative;
+}
+
+.enginneer-grid .grid-item-2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.enginneer-grid .grid-item-3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.enginneer-grid > div {
+    background-color: #E9EAE5;
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+.enginneer-grid > div h5,
+.enginneer-grid > div span {
+    color: var(--clr-navy-blue-dark);
+    margin-bottom: 8px;
+}
+
+.enginneer-grid > div span {
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.enginneer-grid > div img {
+    mix-blend-mode:darken;
+    position: absolute;
+}
+
+.enginneer-grid:nth-of-type(1) .grid-item-1 img {
+    width: 160px;
+    left: 0;
+    bottom: 0;
+}
+
+.enginneer-grid:nth-of-type(2) .grid-item-1 img {
+    width: 160px;
+    left: 0;
+    bottom: 0;
+}
+
+.enginneer-grid:nth-of-type(1) .grid-item-2 img {
+    width: 285px;
+    left: 0;
+    bottom: 0;
+}
+
+.enginneer-grid:nth-of-type(2) .grid-item-2 img {
+    width: 285px;
+    left: 0;
+    bottom: 0;
+}
+
+.enginneer-grid:nth-of-type(1) .grid-item-3 img {
+    width: 150px;
+    right: 0;
+    bottom: 0;
+}
+
+.enginneer-grid:nth-of-type(2) .grid-item-3 img {
+    width: 200px;
+    right: 0;
+    bottom: 0;
+}
+
+.enginneer-grid:nth-of-type(1) .grid-item-4 img {
+    width: 120px;
+    right: 0;
+    bottom: 0;
+}
+
+.enginneer-grid:nth-of-type(2) .grid-item-4 img {
+    width: 50px;
+    right: 10px;
+    top: 0;
+}
+
+#section-engineering-chb-01:checked ~ .section-engineering-grid .enginneer-grid:nth-of-type(1) ,
+#section-engineering-chb-02:checked ~ .section-engineering-grid .enginneer-grid:nth-of-type(2) {
+    display: grid;
+}
+
+
+@media screen and (max-width: 1180px) {
+    .section-engineering-grid > .img-wrap h3 {
+        max-width: 20ch;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    #section-engineering-chb-01:checked ~ .section-engineering-grid .enginneer-grid:nth-of-type(1) ,
+    #section-engineering-chb-02:checked ~ .section-engineering-grid .enginneer-grid:nth-of-type(2) {
+    display: flex;
+}
+
+    .enginneer-grid {
+        flex-direction: column;
+
+    }
+
+    .enginneer-grid img {
+        display: none;
+    }
+
+    .section-engineering-grid > .img-wrap img {
+        height: 100%;
+    }
+
+    .enginneer-grid > div {
+        padding: 1rem;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+
+    .section-engineering-grid {
+        flex-direction: column;
+    }
+
+    .section-engineering-grid > .img-wrap img {
+        width: var(--content-width);
+    }
+
+    .section-engineering-grid > .img-wrap {
+        position: relative;
+    }
+
+    .section-engineering-grid > .img-wrap h3 {
+        bottom: 30px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .enginneer-grid > div {
+        width: var(--content-width);
+    }
+
+    .enginneer-grid img {
+        display: block;
+    }
+
+
+    .enginneer-grid:nth-of-type(1) .grid-item-1 img {
+        width: 160px;
+        left: unset;
+        right: 0;
+    }
+    
+    .enginneer-grid:nth-of-type(2) .grid-item-1 img {
+        width: 120px;
+        left: unset;
+        right: 0;
+    }
+
+    
+    .enginneer-grid:nth-of-type(2) .grid-item-1 span {
+        width: 19ch;
+        display: block;
+    }
+    
+    .enginneer-grid:nth-of-type(1) .grid-item-2 img {
+        width: 200px;
+        left: unset;
+        right: 0;
+        bottom: 0px;
+    }
+    
+    .enginneer-grid:nth-of-type(2) .grid-item-2 img {
+        width: 160px;
+        left: unset;
+        right: 0;
+
+    }
+
+    .enginneer-grid:nth-of-type(2) .grid-item-2 span {
+        width: 19ch;
+        display: block;
+    }
+    
+    .enginneer-grid:nth-of-type(1) .grid-item-3 img {
+        width: 120px;
+        left: unset;
+        right: 0;
+
+    }
+    
+    .enginneer-grid:nth-of-type(2) .grid-item-3 img {
+        width: 140px;
+        left: unset;
+        right: 0;
+    }
+    
+    .enginneer-grid:nth-of-type(1) .grid-item-4 img {
+        width: 120px;
+        left: unset;
+        right: 0;
+    }
+    
+    .enginneer-grid:nth-of-type(2) .grid-item-4 img {
+        width: 50px;
+        left: unset;
+        right: 25px;
+    }
+
+    .section-engineering-grid {
+        margin-top: 6px;
+    }
+
+}

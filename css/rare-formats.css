@@ -121,6 +121,17 @@ input[name="section-rare-formats-radio"] {
     .section-rareformats-grid > img {
         width: 100%;
     }
+
+    
+    .rare-formats-info-wrap button {
+        position: static;
+        transform: translateY(0);
+        margin-bottom: 20px;
+    }
+
+    .section-rareformats-grid {
+        padding-top: 0;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -133,13 +144,10 @@ input[name="section-rare-formats-radio"] {
     }
     .rare-formats-info-wrap p {
         margin-block: 35px;
+        font-size: 14px;
+        line-height: 17px;
     }
 
-    .rare-formats-info-wrap button {
-        position: static;
-        transform: translateY(0);
-        margin-bottom: 20px;
-    }
 
     .section-rareformats-wrap h1 {
         max-width: 10ch;

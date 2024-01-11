@@ -106,6 +106,10 @@ input[name="section-rare-formats-radio"] {
     .rare-formats-info-wrap img {
         display: none;
     }
+    .rare-formats-info-wrap button {
+        transform: translateY(100%);
+    }
+
 }
 
 

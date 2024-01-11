@@ -61,7 +61,7 @@ input[name="section-location-radio"] {
 .section-location-grid-2  {
     position: relative;
     display: none;
-    /* aspect-ratio: 1; */
+    height: 272px;
 }
 
 #section-location-chb-01:checked ~ .section-location-grid > .grid-set-1 ,
@@ -330,6 +330,12 @@ input[name="map-markers"] {
     .section-location-text-tabs p {
         padding: 0;
     }
+
+    .section-location-grid-1,
+    .section-location-grid-2 {
+    height: unset;
+    aspect-ratio: 1;
+}
 }
 
 @media screen and (max-width: 800px) { 

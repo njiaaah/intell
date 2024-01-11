@@ -265,6 +265,10 @@ input[name="map-markers"] {
     transform: translate(-50%, -50%) rotate(90deg);
 }
 
+.section-location-wrap .btn-outline {
+    display: none;
+}
+
 
 @media screen and (max-width: 1000px) { 
 
@@ -391,6 +395,11 @@ input[name="map-markers"] {
 
     .section-location-wrap h1 {
         font-size: 32px;
+    }
+
+    .section-location-wrap .btn-outline {
+        display: block;
+        margin-top: 20px;
     }
 
 }

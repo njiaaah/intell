@@ -402,4 +402,18 @@ input[name="map-markers"] {
         margin-top: 20px;
     }
 
+    .section-location-grid-1,
+    .section-location-grid-2 {
+        width: 100%;
+        height: unset;
+        aspect-ratio: 1;
+    }
+
+    .section-location-grid-1 img,
+    .section-location-grid-2 img {
+        width: 100%;
+        height: unset;
+        aspect-ratio: 1;
+    }
+
 }

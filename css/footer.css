@@ -107,11 +107,13 @@ footer {
 
 .footer-bottom {
     margin-top: 2rem;
+    place-content: center;
 }
 
 .footer-bottom-copyright {
     display: flex;
     justify-content: space-between;
+    place-items: center;
 }
 
 .footer-bottom > a {
@@ -181,10 +183,12 @@ footer {
         display: flex;
         flex-direction: column-reverse;
         gap: 1rem;
+        place-items: normal;
     }
 
     .footer-bottom {
         grid-template-columns: 1fr;
+        place-content: normal;
     }
 
     .footer-blocks {

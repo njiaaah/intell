@@ -37,7 +37,7 @@ header nav ul li{
   margin-right: 12px;
 }
 
-ul li a{
+header ul li a{
   font-family: Oswald;
   font-size: 1rem;
   font-weight: 300;
@@ -65,9 +65,6 @@ ul li a{
   background-color: var(--clr-greyscale-000);
 }
 
-.header-buttons * {
-  cursor: pointer;
-}
 
 .header-tel {
   margin-right: calc(22.5px + -1 * var(--_gap));
@@ -115,7 +112,7 @@ ul li a{
     margin-right: 1.125rem;
   }
 
-  header nav{
+  .header_nav{
     padding-top: 4rem;
     position: fixed;
     top: 2rem;
@@ -130,30 +127,23 @@ ul li a{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 100px 100px -20px, rgba(0, 0, 0, 0.3) 0px 60px 60px -30px;
     }
 
-  header nav ul {
+  .header_nav_ul {
     flex-direction: column;
     width: var(--content-width);
     margin: 0 auto;
     
   }
 
-  ul li ul {
+  .insude_ul__li {
     padding-left: 0.75rem;
+    padding-block: 6px;
   }
 
-  ul li ul li a {
-  font-family: 'PT Sans';
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 17px;
-  }
-
-  ul li ul li a::before {
+  .mobile_nav__a::before {
     content: '>  ';
   }
 
-  header nav ul a,
-  header ul li {
+  .header_a {
     margin-bottom: 12px;
     font-family: 'PT Sans';
     font-size: 0.875rem;
@@ -161,6 +151,21 @@ ul li a{
     line-height: 17px;
     text-transform: uppercase;
     color: var(--clr-navy-blue-dark);
+    display: block;
+  }
+
+  .mobile_nav__a {
+      font-family: 'PT Sans';
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 17px;
+      margin-block: 6px;
+      display: block;
+      color: var(--clr-navy-blue-dark);
+    }
+
+  .header_a_np {
+    margin-bottom: 0px;
   }
 
   #header-menu:checked ~ .header-wrap > nav {

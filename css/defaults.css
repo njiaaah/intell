@@ -5,6 +5,8 @@ body,html {
         /* colors */
 
         --clr-primary-000: #EAC899;
+        /* ? */
+        --clr-primary-000: #F9F0E5;
         --clr-primary-200: #E9EAE5;
         --clr-primary-400: #EAC899;
         --clr-primary-600: #D6B07B;
@@ -133,7 +135,7 @@ label {
 }
 
 .btn-outline:hover {
-    background-color: var(--clr-greyscale-000);
+    /* background-color: var(--clr-greyscale-000); */
     color: var(--clr-primary-800);
     outline: 2px solid var(--clr-btn-hover-bg);
 }

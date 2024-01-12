@@ -1,0 +1,131 @@
+.section-allformats-wrap {
+    padding-top: 107px;
+}
+
+.section-allformats-wrap h1 {
+    font-family: Oswald;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #3D4452;
+}
+.section-allformats-swiper {
+    padding-bottom: 50px;
+    overflow: visible;
+}
+
+.section-allformats-swiper .swiper-slide {
+    display: flex;
+    width: 480px;
+    height: 284px;
+    background-color: var(--clr-primary-800);
+    justify-content: space-between;
+}
+
+.section-allformats-swiper .swiper-slide .btn-outline {
+    border: 2px solid var(--clr-primary-000);
+    outline: none;
+    color: var(--clr-primary-000);
+}
+
+.section-allformats-swiper .swiper-slide div {
+    padding: 2rem ;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.section-allformats-swiper .swiper-slide div h3 {
+    color: var(--clr-primary-000);
+    font-family: Oswald;
+    font-size: 2.125rem;
+    font-weight: 400;
+    line-height: 2.3125rem;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+@media screen and (max-width: 560px) {
+    body {
+        --content-width: clamp(var(--content-width-320), -0.1125rem + 90.25vw, var(--content-width-720));
+    }
+
+    .section-allformats-wrap h1 {
+
+        font-size: 32px;
+
+    }
+
+    .section-allformats-swiper .swiper-slide {
+        flex-direction: column;
+        width: 216px;
+        height: 284px;
+    }
+
+    .section-allformats-swiper .swiper-slide > *:first-child {
+        order: 2;
+    }
+
+    .section-allformats-swiper .swiper-slide > *:last-child {
+        order: 1;
+    }
+
+
+
+    .section-allformats-swiper .swiper-slide img {
+        width: 216px;
+        height: 156px;
+        object-fit: cover;
+        object-position: 0% 0%;
+    }
+
+    .section-allformats-swiper .swiper-slide div {
+        padding: 0.8125rem 1rem;
+    }
+
+    .section-allformats-swiper .swiper-slide div h3 {
+        font-family: Oswald;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+    }
+
+    .section-allformats-swiper .swiper-slide div button {
+        font-family: Oswald;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #fff;
+        width: fit-content;
+
+    }
+
+    .section-allformats-swiper .swiper-slide div button:hover {
+        background-color: transparent;
+    }   
+    
+    .section-allformats-swiper {
+        padding-bottom: 0;
+    }
+    
+    .section-allformats-swiper .swiper-scrollbar {
+        display: none;
+    }
+
+    .section-allformats-wrap {
+        padding-top: 4rem;
+    }
+
+}

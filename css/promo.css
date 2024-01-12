@@ -29,7 +29,6 @@
 
 .section-promo-swiper .swiper-wrapper {
     width: var(--content-width);
-    gap: 1rem;
 }
 
 
@@ -41,12 +40,11 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 1rem;
     justify-content: space-between;
     cursor: grab;
     scroll-behavior: auto;
     height: 35rem;
-    width: 35rem;
+    width: 34rem;
     margin-bottom: 3rem;
 }
 
@@ -57,7 +55,7 @@
 }
 
 .promo-img {
-    width: 35rem;
+    width: 34rem;
     height: 17rem;
 }
 

@@ -76,6 +76,11 @@ h5 {
     line-height: 23px;
 }
 
+label {
+    user-select: none;
+    cursor: pointer;
+}
+
 .flex {
     display: flex;
     align-items: center;

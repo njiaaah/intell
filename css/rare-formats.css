@@ -132,6 +132,11 @@ input[name="section-rare-formats-radio"] {
     .section-rareformats-grid {
         padding-top: 0;
     }
+
+    .rare-formats-info-wrap p {
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
 }
 
 @media screen and (max-width: 560px) {

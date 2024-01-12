@@ -27,9 +27,12 @@
 <body>
     <main>
 
+        <!-- toggles filter menu on mobile and hides all other stuff -->
+        <input type="checkbox" name="mobile-filter-inputs" id="mobile-filter-menu-toggle">
+
         <header>
 
-            <input type="checkbox" name="" id="header-menu" hidden >
+            <input type="checkbox" name="header-menu" id="header-menu" hidden >
 
             <div class="header-wrap">
 
@@ -39,14 +42,14 @@
 
                 <nav>
                     <ul>
-                        <li  class="header-nav-active desktop-only" ><a href="/page.html">Акции</a></li>
-                        <li class="desktop-only"><a href="/page.html">Команда проекта</a></li>
-                        <li class="desktop-only"><a href="/page.html">Генплан</a></li>
-                        <li class="mobile-only"><a href="/page.html">О проекте</a></li>
-                        <li class="mobile-only"><a href="/page.html">Расположение</a></li>
+                        <li  class="header-nav-active desktop-only" ><a href="page.html">Акции</a></li>
+                        <li class="desktop-only"><a href="page.html">Команда проекта</a></li>
+                        <li class="desktop-only"><a href="page.html">Генплан</a></li>
+                        <li class="mobile-only"><a href="page.html">О проекте</a></li>
+                        <li class="mobile-only"><a href="page.html">Расположение</a></li>
 
                         <li class="mobile-only" >
-                            <ahref="/page.html">Купить
+                            <a href="page.html">Купить
 
                             </a>
                         </li>
@@ -60,11 +63,11 @@
                             </ul>
                         </li>
 
-                        <li class="mobile-only" ><a href="/page.html">Галерея</a></li>
-                        <li><a href="/page.html">Ход строительства</a></li>
-                        <li class="mobile-only" ><a href="/page.html">О компании</a></li>
-                        <li class="mobile-only" ><a href="/page.html">Документы</a></li>
-                        <li><a href="/page.html">Контакты</a></li>
+                        <li class="mobile-only" ><a href="page.html">Галерея</a></li>
+                        <li><a href="page.html">Ход строительства</a></li>
+                        <li class="mobile-only" ><a href="page.html">О компании</a></li>
+                        <li class="mobile-only" ><a href="page.html">Документы</a></li>
+                        <li><a href="page.html">Контакты</a></li>
                     </ul>
                 </nav>
 
@@ -118,7 +121,7 @@
         </header>
 
         <!--  -->
-        <section hidden class="section-hero">
+        <section  class="section-hero">
 
 
             <div class="section-hero-wrap content">
@@ -230,8 +233,8 @@
 
         </section>
 
-        <!--  -->
-        <div hidden class="section-hero-additional-banner full">
+        <!-- hidden -->
+        <div  class="section-hero-additional-banner full">
             <nav class="content">
                 <ul>
                     <li><a  class="current-link" href="#">Расположение</a></li>
@@ -243,16 +246,14 @@
                     <li><a href="#">Как купить</a></li>
 
                     <li>
-                        <button>
                             <a href="#">Выбрать квартиру</a>
-                        </button>
                     </li>
                 </ul>
             </nav>
         </div>
 
-        <!--  -->
-        <section hidden class="section-complex">
+        <!-- hidden -->
+        <section  class="section-complex">
 
             <div class="section-complex-wrap content">
 
@@ -362,8 +363,8 @@
 
         </section>
 
-        <!--  -->
-        <section hidden class ="section-location">
+        <!-- hidden -->
+        <section  class ="section-location">
 
             <div class="section-location-wrap content">
 
@@ -377,13 +378,13 @@
 
                 <div class="horizontalscroll dragscroll hsb horizontal-scroller">
 
-                    <div class="section-scrollabale-tabs flex" >
+                    <div class="section-scrollabale-tabs flex " >
     
-                        <label for="section-location-chb-01" class="cursor-pointer section-scrollabale-tabs-selected nowrap">Транспортная доступность</label>
+                        <label for="section-location-chb-01" class="cursor-pointer section-scrollabale-tabs-selected nowrap ">Транспортная доступность</label>
         
-                        <label for="section-location-chb-02" class="cursor-pointer nowrap">Статусное окружение</label>
+                        <label for="section-location-chb-02" class="cursor-pointer nowrap ">Статусное окружение</label>
         
-                        <label for="section-location-chb-03" class="cursor-pointer nowrap">Парки вокруг</label>
+                        <label for="section-location-chb-03" class="cursor-pointer nowrap ">Парки вокруг</label>
         
                     </div>
     
@@ -683,8 +684,8 @@
 
         </section>
 
-        <!--  -->
-        <section hidden class="section-advantages">
+        <!-- hidden -->
+        <section  class="section-advantages">
 
             <div class="section-advantages-wrap content">
 
@@ -763,8 +764,8 @@
 
         </section>
 
-        <!--  -->
-        <section hidden class="section-rareformats">
+        <!-- hidden -->
+        <section  class="section-rareformats">
 
             <div class="section-rareformats-wrap content">
 
@@ -830,8 +831,8 @@
 
         </section>
 
-        <!--  -->
-        <section hidden class="section-callback">
+        <!-- hidden -->
+        <section  class="section-callback">
 
             <div class="section-callback-wrap">
 
@@ -895,8 +896,8 @@
 
         </section>
 
-        <!--  -->
-        <section hidden class="section-engineering">
+        <!-- hidden -->
+        <section  class="section-engineering">
 
             <div class="section-engineering-wrap content">
 
@@ -1065,6 +1066,10 @@
         
         <section class="section-filter" id="filter">
 
+
+            <input type="checkbox" name="mobile-filter-inputs" id="mobile-filter-sort-toggle">
+            <input type="checkbox" name="mobile-filter-inputs" id="mobile-filter-promo-toggle" checked>
+
             <div class="section-filter-wrap content">
 
                 <div class="filter-heading-wrap">
@@ -1076,11 +1081,11 @@
 
                         <div class="section-scrollabale-tabs flex" >
         
-                            <span class="cursor-pointer nowrap">Машиноместа</span>
+                            <span class="cursor-pointer nowrap uppercase">Машиноместа</span>
             
-                            <span class="cursor-pointer nowrap">Кладовые</span>
+                            <span class="cursor-pointer nowrap uppercase">Кладовые</span>
             
-                            <span class="cursor-pointer nowrap">Коммерческие помещения</span>
+                            <span class="cursor-pointer nowrap uppercase">Коммерческие помещения</span>
             
                         </div>
         
@@ -1088,7 +1093,53 @@
 
                 </div>
 
-                <div class="filter-sliders-wrap content">
+                <div class="filter-mobile-controls-wrap">
+
+                    <label for="mobile-filter-menu-toggle" class="mobile-filter-menu-toggle">
+
+                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5001 6.81641L9.16675 6.81641" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 7.98291C7 9.08748 6.10457 9.98291 5 9.98291C3.89543 9.98291 3 9.08748 3 7.98291C3 6.87834 3.89543 5.98291 5 5.98291" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M2.49992 15.1494L10.8333 15.1494" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 17.9829C17 19.0875 17.8954 19.9829 19 19.9829C20.1046 19.9829 21 19.0875 21 17.9829C21 16.8783 20.1046 15.9829 19 15.9829" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+
+                        Фильтр
+
+                    </label>
+
+                    <label for="mobile-filter-sort-toggle" class="mobile-filter-sort-toggle">
+
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.7083 6.58289L5.60828 3.48291L2.5083 6.58289" stroke="#B6915D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.60828 18.4829V3.48291" stroke="#B6915D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.2916 15.3828L14.3917 18.4828L17.4916 15.3828" stroke="#B6915D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.3916 3.48291V18.4829" stroke="#B6915D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                        Сортировать
+
+                    </label>
+
+                    <label for="mobile-filter-promo-toggle" class="mobile-filter-promo-toggle">
+
+                        Акция
+
+                    </label>
+
+                </div>
+
+                <div class="filter-sliders-wrap">
+
+                    <h2 class="slider-menu-only">Выбрать квартиру</h2>
+
+                    <label for="mobile-filter-menu-toggle" class="slider-menu-only close-filter-label">
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3 15.2L10.5891 12.6828C10.1631 12.2872 10.1631 11.6128 10.5891 11.2172L13.3 8.7M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z" stroke="#0C474F" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+
+                    </label>
 
                     <div class="slider-wrap">
                             
@@ -1124,7 +1175,8 @@
                     </div>
 
                     <div class="filter-reset">
-                        Сбросить фильтр
+                        
+                        <span>Сбросить фильтр</span>
 
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.94971 15.2044L15.6097 9.54443" stroke="#B6915D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1143,7 +1195,7 @@
 
                         <span>Корпус</span>
 
-                        <div>
+                        <div class="label-wrap">
 
                             <label for="filter-house-01">1</label>
                             <label for="filter-house-02">2</label>
@@ -1165,7 +1217,7 @@
 
                         <span>Количество комнат</span>
 
-                        <div>
+                        <div class="label-wrap">
 
                             <label for="filter-room-01">1</label>
                             <label for="filter-room-02">2</label>
@@ -1183,9 +1235,300 @@
                         Найдено квартир
                         <span>141</span>
 
+                        
+
                     </div>
 
+                    <div class="slider-menu-only finishing-checkbox-wrap">
+
+                        <input type="checkbox" name="finishing-checkbox" id="finishing-euro">
+                        <input type="checkbox" name="finishing-checkbox" id="finishing-whitebox">
+
+                        <label for="finishing-euro" class="finishing-euro">
+                            <span>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3160_4825)">
+                                    <path d="M3.5957 8.66663L6.26237 11.3333L12.929 4.66663" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_3160_4825">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.262695)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    
+                            </span>
+                            Евроформат
+                        </label>
+
+                        <label for="finishing-whitebox" class="finishing-whitebox">
+                            <span>
+                                <svg width="17" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3160_4826)">
+                                    <path d="M3.5957 8.66663L6.26237 11.3333L12.929 4.66663" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_3160_4826">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.262695)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                            </span>
+                            Отделка white box
+                        </label>
+
+                    </div>
+
+                    <div class="slider-menu-only slider-menu-tag-wrap">
+
+                        <div class="tag-item">Акция</div>
+                        <div class="tag-item dropdown">
+                            Виды 
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.28 5.96667L8.9333 10.3133C8.41997 10.8267 7.57997 10.8267 7.06664 10.3133L2.71997 5.96667" stroke="#3D4452" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                        </div>
+                        <div class="tag-item">Вид на Москва-реку</div>
+                        <div class="tag-item">Балкон</div>
+                        <div class="tag-item">Без балкона</div>
+                        <div class="tag-item">Гардеробная</div>
+
+                    </div>
+
+                    <button class="slider-menu-only show-found-btn uppercase">
+
+                        Найдено <span id="apparts-found">143</span> квартиры
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0248 4.94171L17.0831 10L12.0248 15.0584" stroke="#927752" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.91663 10H16.9416" stroke="#927752" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            
+                    </button>
+
                 </div>
+
+                <div class="filter-results-grid">
+
+                    <div class="filter-result-item">
+
+                        <div class="filter-icons-wrap">
+
+                            <span class="filter-print">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.99005 8.7959H18.1C21.66 8.7959 22.55 9.6759 22.55 13.1859V17.3959C22.55 20.9059 21.66 21.7859 18.11 21.7859H6.99005C3.44005 21.7959 2.55005 20.9159 2.55005 17.4059V13.1859C2.55005 9.6759 3.44005 8.7959 6.99005 8.7959Z" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.55 8.3959V6.1859C19.55 2.6759 18.66 1.7959 15.1 1.7959H9.99005C6.44005 1.7959 5.55005 2.6759 5.55005 6.1859V8.4059" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.98999 12.291H11.1" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.55 21.416V20.5658C19.55 17.0558 18.66 16.1758 15.1 16.1758H11.99C8.44005 16.1758 7.55005 17.0558 7.55005 20.5658V21.7858" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>  
+                            </span>
+
+                            <span class="filter-fav">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.3">
+                                    <path d="M22.7316 9.73874C22.4584 8.83048 21.6389 8.10388 20.7284 8.01305L16.9042 7.46809L15.1742 3.83506C14.7189 2.83597 13.8995 2.29102 12.8979 2.29102C11.8963 2.29102 11.0768 2.83597 10.6216 3.74423L8.89156 7.37727L5.06735 8.01305C4.15682 8.1947 3.33734 8.83048 3.06419 9.73874C2.69997 10.7378 2.97313 11.7369 3.70155 12.4635L6.52419 15.2791L5.88682 19.2755C5.70471 20.2746 6.15998 21.2736 6.97945 21.8186C7.43472 22.0911 7.88998 22.2727 8.4363 22.2727C8.89156 22.2727 9.25577 22.1819 9.61998 22.0002L13.08 20.0929L16.54 22.0002C17.3595 22.4544 18.361 22.3636 19.1805 21.8186C20 21.2736 20.4553 20.2746 20.2732 19.2755L19.6358 15.2791L22.4584 12.4635C22.8226 11.7369 23.0958 10.647 22.7316 9.73874Z" fill="#B6915D"/>
+                                    </g>
+                                </svg>
+                            </span>
+
+                        </div>
+
+                        <div class="filter-pos-wrap">
+
+                            <span class="filter-no">121</span>
+                            <div>
+                                <span class="filter-rooms">5</span>
+                                <span class="filter-square">150</span>
+                            </div>
+
+                        </div>
+
+                        <div class="price">6 500 600</div>
+
+                        <img src="./img/filter/result_1.webp" alt="">
+
+                        <div class="filter-house-floor">
+
+                            <span class="filter-house">1</span>
+                            <span class="filter-floor">18</span>
+
+                        </div>
+
+                        <button class="btn-primary">Забронировать</button>
+
+
+
+                    </div>
+
+                    <div class="filter-result-item">
+
+                        <div class="filter-icons-wrap">
+
+                            <span class="filter-print">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.99005 8.7959H18.1C21.66 8.7959 22.55 9.6759 22.55 13.1859V17.3959C22.55 20.9059 21.66 21.7859 18.11 21.7859H6.99005C3.44005 21.7959 2.55005 20.9159 2.55005 17.4059V13.1859C2.55005 9.6759 3.44005 8.7959 6.99005 8.7959Z" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.55 8.3959V6.1859C19.55 2.6759 18.66 1.7959 15.1 1.7959H9.99005C6.44005 1.7959 5.55005 2.6759 5.55005 6.1859V8.4059" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.98999 12.291H11.1" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.55 21.416V20.5658C19.55 17.0558 18.66 16.1758 15.1 16.1758H11.99C8.44005 16.1758 7.55005 17.0558 7.55005 20.5658V21.7858" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>  
+                            </span>
+
+                            <span class="filter-fav">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.3">
+                                    <path d="M22.7316 9.73874C22.4584 8.83048 21.6389 8.10388 20.7284 8.01305L16.9042 7.46809L15.1742 3.83506C14.7189 2.83597 13.8995 2.29102 12.8979 2.29102C11.8963 2.29102 11.0768 2.83597 10.6216 3.74423L8.89156 7.37727L5.06735 8.01305C4.15682 8.1947 3.33734 8.83048 3.06419 9.73874C2.69997 10.7378 2.97313 11.7369 3.70155 12.4635L6.52419 15.2791L5.88682 19.2755C5.70471 20.2746 6.15998 21.2736 6.97945 21.8186C7.43472 22.0911 7.88998 22.2727 8.4363 22.2727C8.89156 22.2727 9.25577 22.1819 9.61998 22.0002L13.08 20.0929L16.54 22.0002C17.3595 22.4544 18.361 22.3636 19.1805 21.8186C20 21.2736 20.4553 20.2746 20.2732 19.2755L19.6358 15.2791L22.4584 12.4635C22.8226 11.7369 23.0958 10.647 22.7316 9.73874Z" fill="#B6915D"/>
+                                    </g>
+                                </svg>
+                            </span>
+
+                        </div>
+
+                        <div class="filter-pos-wrap">
+
+                            <span class="filter-no">121</span>
+                            <div>
+                                <span class="filter-rooms">5</span>
+                                <span class="filter-square">150</span>
+                            </div>
+
+                        </div>
+
+                        <div class="price">6 500 600</div>
+
+                        <img src="./img/filter/result_1.webp" alt="">
+
+                        <div class="filter-house-floor">
+
+                            <span class="filter-house">1</span>
+                            <span class="filter-floor">18</span>
+
+                        </div>
+
+                        <button class="btn-primary">Забронировать</button>
+
+
+
+                    </div>
+
+                    <div class="filter-result-item">
+
+                        <div class="filter-icons-wrap">
+
+                            <span class="filter-print">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.99005 8.7959H18.1C21.66 8.7959 22.55 9.6759 22.55 13.1859V17.3959C22.55 20.9059 21.66 21.7859 18.11 21.7859H6.99005C3.44005 21.7959 2.55005 20.9159 2.55005 17.4059V13.1859C2.55005 9.6759 3.44005 8.7959 6.99005 8.7959Z" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.55 8.3959V6.1859C19.55 2.6759 18.66 1.7959 15.1 1.7959H9.99005C6.44005 1.7959 5.55005 2.6759 5.55005 6.1859V8.4059" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.98999 12.291H11.1" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.55 21.416V20.5658C19.55 17.0558 18.66 16.1758 15.1 16.1758H11.99C8.44005 16.1758 7.55005 17.0558 7.55005 20.5658V21.7858" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>  
+                            </span>
+
+                            <span class="filter-fav">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.3">
+                                    <path d="M22.7316 9.73874C22.4584 8.83048 21.6389 8.10388 20.7284 8.01305L16.9042 7.46809L15.1742 3.83506C14.7189 2.83597 13.8995 2.29102 12.8979 2.29102C11.8963 2.29102 11.0768 2.83597 10.6216 3.74423L8.89156 7.37727L5.06735 8.01305C4.15682 8.1947 3.33734 8.83048 3.06419 9.73874C2.69997 10.7378 2.97313 11.7369 3.70155 12.4635L6.52419 15.2791L5.88682 19.2755C5.70471 20.2746 6.15998 21.2736 6.97945 21.8186C7.43472 22.0911 7.88998 22.2727 8.4363 22.2727C8.89156 22.2727 9.25577 22.1819 9.61998 22.0002L13.08 20.0929L16.54 22.0002C17.3595 22.4544 18.361 22.3636 19.1805 21.8186C20 21.2736 20.4553 20.2746 20.2732 19.2755L19.6358 15.2791L22.4584 12.4635C22.8226 11.7369 23.0958 10.647 22.7316 9.73874Z" fill="#B6915D"/>
+                                    </g>
+                                </svg>
+                            </span>
+
+                        </div>
+
+                        <div class="filter-pos-wrap">
+
+                            <span class="filter-no">121</span>
+                            <div>
+                                <span class="filter-rooms">5</span>
+                                <span class="filter-square">150</span>
+                            </div>
+
+                        </div>
+
+                        <div class="price">6 500 600</div>
+
+                        <img src="./img/filter/result_1.webp" alt="">
+
+                        <div class="filter-house-floor">
+
+                            <span class="filter-house">1</span>
+                            <span class="filter-floor">18</span>
+
+                        </div>
+
+                        <button class="btn-primary">Забронировать</button>
+
+
+
+                    </div>
+
+                    <div class="filter-result-item">
+
+                        <div class="filter-icons-wrap">
+
+                            <span class="filter-print">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.99005 8.7959H18.1C21.66 8.7959 22.55 9.6759 22.55 13.1859V17.3959C22.55 20.9059 21.66 21.7859 18.11 21.7859H6.99005C3.44005 21.7959 2.55005 20.9159 2.55005 17.4059V13.1859C2.55005 9.6759 3.44005 8.7959 6.99005 8.7959Z" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.55 8.3959V6.1859C19.55 2.6759 18.66 1.7959 15.1 1.7959H9.99005C6.44005 1.7959 5.55005 2.6759 5.55005 6.1859V8.4059" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.98999 12.291H11.1" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.55 21.416V20.5658C19.55 17.0558 18.66 16.1758 15.1 16.1758H11.99C8.44005 16.1758 7.55005 17.0558 7.55005 20.5658V21.7858" stroke="#BDBDB8" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>  
+                            </span>
+
+                            <span class="filter-fav">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.3">
+                                    <path d="M22.7316 9.73874C22.4584 8.83048 21.6389 8.10388 20.7284 8.01305L16.9042 7.46809L15.1742 3.83506C14.7189 2.83597 13.8995 2.29102 12.8979 2.29102C11.8963 2.29102 11.0768 2.83597 10.6216 3.74423L8.89156 7.37727L5.06735 8.01305C4.15682 8.1947 3.33734 8.83048 3.06419 9.73874C2.69997 10.7378 2.97313 11.7369 3.70155 12.4635L6.52419 15.2791L5.88682 19.2755C5.70471 20.2746 6.15998 21.2736 6.97945 21.8186C7.43472 22.0911 7.88998 22.2727 8.4363 22.2727C8.89156 22.2727 9.25577 22.1819 9.61998 22.0002L13.08 20.0929L16.54 22.0002C17.3595 22.4544 18.361 22.3636 19.1805 21.8186C20 21.2736 20.4553 20.2746 20.2732 19.2755L19.6358 15.2791L22.4584 12.4635C22.8226 11.7369 23.0958 10.647 22.7316 9.73874Z" fill="#B6915D"/>
+                                    </g>
+                                </svg>
+                            </span>
+
+                        </div>
+
+                        <div class="filter-pos-wrap">
+
+                            <span class="filter-no">121</span>
+                            <div>
+                                <span class="filter-rooms">5</span>
+                                <span class="filter-square">150</span>
+                            </div>
+
+                        </div>
+
+                        <div class="price">6 500 600</div>
+
+                        <img src="./img/filter/result_1.webp" alt="">
+
+                        <div class="filter-house-floor">
+
+                            <span class="filter-house">1</span>
+                            <span class="filter-floor">18</span>
+
+                        </div>
+
+                        <button class="btn-primary">Забронировать</button>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+                <button class="filter-show-more btn-primary btn-outline uppercase">
+                    Показать еще
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.3044 5.44189L17.3628 10.5002L12.3044 15.5586" stroke="#927752" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.19653 10.5H17.2215" stroke="#927752" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                </button>
+
+                <button class="filter-show-more filter-show-more-mobile btn-primary btn-outline uppercase">
+                    Показать <span>141</span> квартиру
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.3044 5.44189L17.3628 10.5002L12.3044 15.5586" stroke="#927752" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.19653 10.5H17.2215" stroke="#927752" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                </button>
+
 
             </div>
 

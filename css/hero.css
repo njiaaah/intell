@@ -178,7 +178,7 @@ header {
   bottom: 0;
 }
 
-.section-hero-additional-banner button {
+.section-hero-additional-banner li:last-child a {
   font-family: Oswald;
   font-size: 0.875rem;
   font-weight: 400;
@@ -187,10 +187,11 @@ header {
   outline: none;
   border: none;
   background-color: var(--clr-navy-blue-dark);
+  height: fit-content;
   
 }
 
-.section-hero-additional-banner button a {
+.section-hero-additional-banner  li:last-child a {
   color: var(--clr-greyscale-000);
   white-space: nowrap;
 }

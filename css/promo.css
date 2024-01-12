@@ -9,11 +9,15 @@
 }
 
 .section-promo-wrap .swiper-button-prev {
-    transform: translate(-30px, -250%);
+    transform: none;
+    left: -2rem;
+    top: 8rem;
 }
 
 .section-promo-wrap .swiper-button-next {
-    transform: translate(30px, -250%) scaleX(-1);
+    transform: scaleX(-1);
+    right: -2rem;
+    top: 8rem;
 }
 
 .section-promo-wrap h2 {

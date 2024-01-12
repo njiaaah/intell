@@ -87,7 +87,7 @@
     letter-spacing: 0em;
     text-align: left;
     color:  #1D1D1B;
-    height: 7rem;
+    height: 7.5rem;
     overflow: hidden;
 }
 
@@ -121,10 +121,10 @@
 @media only screen and (max-width: 560px) {
 
     .section-promo-item {
-        width: 17rem;
+        width: clamp(18rem, -2rem + 100vw, 33rem);
     }
 
     .promo-img {
-        width: 17rem;
+        width: clamp(18rem, -2rem + 100vw, 33rem);
     }
 }

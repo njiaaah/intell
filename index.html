@@ -117,8 +117,8 @@
 
         </header>
 
-        <!-- hidden -->
-        <section  class="section-hero">
+        <!--  -->
+        <section hidden class="section-hero">
 
 
             <div class="section-hero-wrap content">
@@ -230,8 +230,8 @@
 
         </section>
 
-        <!-- hidden -->
-        <div  class="section-hero-additional-banner full">
+        <!--  -->
+        <div hidden class="section-hero-additional-banner full">
             <nav class="content">
                 <ul>
                     <li><a  class="current-link" href="#">Расположение</a></li>
@@ -251,8 +251,8 @@
             </nav>
         </div>
 
-        <!-- hidden -->
-        <section  class="section-complex">
+        <!--  -->
+        <section hidden class="section-complex">
 
             <div class="section-complex-wrap content">
 
@@ -362,8 +362,8 @@
 
         </section>
 
-        <!-- hidden -->
-        <section  class ="section-location">
+        <!--  -->
+        <section hidden class ="section-location">
 
             <div class="section-location-wrap content">
 
@@ -683,8 +683,8 @@
 
         </section>
 
-        <!-- hidden -->
-        <section  class="section-advantages">
+        <!--  -->
+        <section hidden class="section-advantages">
 
             <div class="section-advantages-wrap content">
 
@@ -763,8 +763,8 @@
 
         </section>
 
-        <!-- hidden -->
-        <section  class="section-rareformats">
+        <!--  -->
+        <section hidden class="section-rareformats">
 
             <div class="section-rareformats-wrap content">
 
@@ -830,8 +830,8 @@
 
         </section>
 
-        <!-- hidden -->
-        <section  class="section-callback">
+        <!--  -->
+        <section hidden class="section-callback">
 
             <div class="section-callback-wrap">
 
@@ -895,8 +895,8 @@
 
         </section>
 
-        <!-- hidden -->
-        <section class="section-engineering">
+        <!--  -->
+        <section hidden class="section-engineering">
 
             <div class="section-engineering-wrap content">
 
@@ -1063,7 +1063,134 @@
         </section>
 
         
-        <section class="section-filter"></section>
+        <section class="section-filter" id="filter">
+
+            <div class="section-filter-wrap content">
+
+                <div class="filter-heading-wrap">
+
+                    <h1 class="uppercase">Выбрать квартиру</h1>
+
+
+                    <div class="horizontalscroll dragscroll hsb horizontal-scroller other-filter-options">
+
+                        <div class="section-scrollabale-tabs flex" >
+        
+                            <span class="cursor-pointer nowrap">Машиноместа</span>
+            
+                            <span class="cursor-pointer nowrap">Кладовые</span>
+            
+                            <span class="cursor-pointer nowrap">Коммерческие помещения</span>
+            
+                        </div>
+        
+                    </div>
+
+                </div>
+
+                <div class="filter-sliders-wrap content">
+
+                    <div class="slider-wrap">
+                            
+                        <span>Общая стоимость (₽)</span>
+                        <div id="sectionFilterPriceSlider01" class="slider"></div>
+                        <div class="slider-val-wrap">
+                            <span id="sectionFilterPriceSlider01-lower" class="slider-val"></span>
+                            <span id="sectionFilterPriceSlider01-upper" class="slider-val"></span>
+                        </div>
+    
+                    </div>
+
+                    <div class="slider-wrap">
+                            
+                        <span>Общая площадь (м2)</span>
+                        <div id="sectionFilterSquareSlider01" class="slider"></div>
+                        <div class="slider-val-wrap">
+                            <span id="sectionFilterSquareSlider01-lower" class="slider-val"></span>
+                            <span id="sectionFilterSquareSlider01-upper" class="slider-val"></span>
+                        </div>
+    
+                    </div>
+
+                    <div class="slider-wrap">
+                            
+                        <span>Этаж</span>
+                        <div id="sectionFilterFloorSlider01" class="slider"></div>
+                        <div class="slider-val-wrap">
+                            <span id="sectionFilterFloorSlider01-lower" class="slider-val"></span>
+                            <span id="sectionFilterFloorSlider01-upper" class="slider-val"></span>
+                        </div>
+    
+                    </div>
+
+                    <div class="filter-reset">
+                        Сбросить фильтр
+
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.94971 15.2044L15.6097 9.54443" stroke="#B6915D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.6097 15.2044L9.94971 9.54443" stroke="#B6915D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.77979 7.37451C2.77979 4.61309 5.01836 2.37451 7.77979 2.37451H17.7798C20.5412 2.37451 22.7798 4.61309 22.7798 7.37451V17.3745C22.7798 20.1359 20.5412 22.3745 17.7798 22.3745H7.77979C5.01836 22.3745 2.77979 20.1359 2.77979 17.3745V7.37451Z" stroke="#B6915D" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            
+                    </div>
+
+                    <div class="checkbox-wrap">
+
+                        <input type="checkbox" name="filter-house" id="filter-house-01">
+                        <input type="checkbox" name="filter-house" id="filter-house-02">
+                        <input type="checkbox" name="filter-house" id="filter-house-03">
+                        <input type="checkbox" name="filter-house" id="filter-house-all">
+
+                        <span>Корпус</span>
+
+                        <div>
+
+                            <label for="filter-house-01">1</label>
+                            <label for="filter-house-02">2</label>
+                            <label for="filter-house-03">3</label>
+                            <label for="filter-house-all">ВСЕ</label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="checkbox-wrap">
+
+                        <input type="checkbox" name="filter-room" id="filter-room-01">
+                        <input type="checkbox" name="filter-room" id="filter-room-02">
+                        <input type="checkbox" name="filter-room" id="filter-room-03">
+                        <input type="checkbox" name="filter-room" id="filter-room-04">
+                        <input type="checkbox" name="filter-room" id="filter-room-05">
+                        <input type="checkbox" name="filter-room" id="filter-room-all">
+
+                        <span>Количество комнат</span>
+
+                        <div>
+
+                            <label for="filter-room-01">1</label>
+                            <label for="filter-room-02">2</label>
+                            <label for="filter-room-03">3</label>
+                            <label for="filter-room-04">4</label>
+                            <label for="filter-room-05">5</label>
+                            <label for="filter-room-all">ВСЕ</label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="filter-apparts-found">
+
+                        Найдено квартир
+                        <span>141</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
 
         
         <section class="section-howtobuy"></section>

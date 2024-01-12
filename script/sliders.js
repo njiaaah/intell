@@ -49,6 +49,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
         // example on huindex.html
 
-        sliderInit('sliderID','sliderID-lower', 'sliderID-upper', 0, 50, 5, 25, 1 )
+        // filter sliders
+
+        sliderInit('sectionFilterPriceSlider01','sectionFilterPriceSlider01-lower', 'sectionFilterPriceSlider01-upper', 5000000, 30000000, 8000000, 20000000, 50000 )
+        sliderInit('sectionFilterSquareSlider01','sectionFilterSquareSlider01-lower', 'sectionFilterSquareSlider01-upper', 30, 150, 40, 90, 1 )
+        sliderInit('sectionFilterFloorSlider01','sectionFilterFloorSlider01-lower', 'sectionFilterFloorSlider01-upper', 2, 28, 3, 18, 1 )
 
 })

@@ -284,5 +284,16 @@ main {
 }
 
 
+/* temporary */
+/* hide all section but #current and previous one */
+
+/* section {
+    display: none;
+}
+
+section:has(+ #current),
+#current {
+    display: block;
+} */
 
 

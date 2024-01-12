@@ -55,4 +55,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
         sliderInit('sectionFilterSquareSlider01','sectionFilterSquareSlider01-lower', 'sectionFilterSquareSlider01-upper', 30, 150, 40, 90, 1 )
         sliderInit('sectionFilterFloorSlider01','sectionFilterFloorSlider01-lower', 'sectionFilterFloorSlider01-upper', 2, 28, 3, 18, 1 )
 
+        sliderInit('sectionMortgagePriceSlider01','sectionMortgagePriceSlider01-lower', 'sectionMortgagePriceSlider01-upper', 5000000, 30000000, 8000000, 20000000, 50000 )
+        sliderInit('sectionMortgagePriceSlider02','sectionMortgagePriceSlider02-lower', 'sectionMortgagePriceSlider02-upper', 100000, 8000000, 800000, 5000000, 10000 )
+        sliderInit('sectionMortgageYearsSlider01','sectionMortgageYearsSlider01-lower', 'sectionMortgageYearsSlider01-upper', 2, 36, 5, 18, 1 )
+
 })

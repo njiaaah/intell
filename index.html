@@ -372,8 +372,8 @@
 
                 </h1>
 
-                <input type="radio" name="section-location-radio" id="section-location-chb-01" >
-                <input type="radio" name="section-location-radio" id="section-location-chb-02" checked>
+                <input type="radio" name="section-location-radio" id="section-location-chb-01" checked>
+                <input type="radio" name="section-location-radio" id="section-location-chb-02">
                 <input type="radio" name="section-location-radio" id="section-location-chb-03">
 
                 <div class="horizontalscroll dragscroll hsb horizontal-scroller">
@@ -1537,7 +1537,276 @@
 
         
         <section class="section-howtobuy" id="current">
-            COCK
+
+            <input type="radio" name="section-howtobuy-radio" id="section-howtobuy-chb-01" checked>
+            <input type="radio" name="section-howtobuy-radio" id="section-howtobuy-chb-02">
+            <input type="radio" name="section-howtobuy-radio" id="section-howtobuy-chb-03">
+            <input type="radio" name="section-howtobuy-radio" id="section-howtobuy-chb-04">
+
+            <img src="./img/howtobuy/bg.png" class="howtobuy-background" alt="">
+
+            <div class="section-howtobuy-wrap content">
+
+                
+                
+                <h1 class="uppercase">Как купить</h1>
+
+                
+
+                <div class="horizontalscroll dragscroll hsb horizontal-scroller">
+
+                    <div class="section-scrollabale-tabs flex" >
+    
+                        <label for="section-howtobuy-chb-01" class="cursor-pointer section-scrollabale-tabs-selected nowrap">100% оплата</label>
+        
+                        <label hidden for="section-howtobuy-chb-02" class="cursor-pointer nowrap">Ипотека</label>
+        
+                        <label for="section-howtobuy-chb-03" class="cursor-pointer nowrap">Беспроцентная рассрочка</label>
+                        <label for="section-howtobuy-chb-04" class="cursor-pointer nowrap">Трейд-ин</label>
+        
+                    </div>
+    
+                </div>
+
+                <img class="howtobuy-illustration" src="./img/howtobuy/illustration_1.png" alt="">
+
+                <div class="howtobuy-tab-content">
+
+                    <div class="howtobuy-100oplata text-tab">
+
+                        <p>
+                            Квартиру в жилом комплексе На Большой Филёвской можно приобрести за безналичный расчет.
+                            Для этого достаточно обратиться в офис продаж и выбрать интересующую вас квартиру.
+                            Необходимо время для принятия решения? Тогда вы можете забронировать 
+                            понравившийся вариант, чтобы спокойно все взвесить. 
+                        </p>
+
+                    </div>
+
+                    <div class="howtobuy-ipoteka">
+
+                        <div class="ipoteka-left">
+
+                            <div class="slider-wrap">
+                            
+                                <span>Общая стоимость (₽)</span>
+                                <div id="sectionMortgagePriceSlider01" class="slider"></div>
+                                <div class="slider-val-wrap">
+                                    <span id="sectionMortgagePriceSlider01-lower" class="slider-val"></span>
+                                    <span id="sectionMortgagePriceSlider01-upper" class="slider-val"></span>
+                                </div>
+            
+                            </div>
+        
+                            <div class="slider-wrap">
+                                    
+                                <span>Первый взнос</span>
+                                <div id="sectionMortgagePriceSlider02" class="slider"></div>
+                                <div class="slider-val-wrap">
+                                    <span id="sectionMortgagePriceSlider02-lower" class="slider-val"></span>
+                                    <span id="sectionMortgagePriceSlider02-upper" class="slider-val"></span>
+                                </div>
+            
+                            </div>
+        
+                            <div class="slider-wrap">
+                                    
+                                <span>Срок кредита</span>
+                                <div id="sectionMortgageYearsSlider01" class="slider"></div>
+                                <div class="slider-val-wrap">
+                                    <span id="sectionMortgageYearsSlider01-lower" class="slider-val"></span>
+                                    <span id="sectionMortgageYearsSlider01-upper" class="slider-val"></span>
+                                </div>
+            
+                            </div>
+
+                            <div class="ipoteka-reset">
+                                Сбросить значение
+
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0562 14.83L15.7162 9.16998" stroke="#B6915D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7162 14.83L10.0562 9.16998" stroke="#B6915D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.88623 7C2.88623 4.23858 5.12481 2 7.88623 2H17.8862C20.6477 2 22.8862 4.23858 22.8862 7V17C22.8862 19.7614 20.6477 22 17.8862 22H7.88623C5.12481 22 2.88623 19.7614 2.88623 17V7Z" stroke="#B6915D" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                    
+                            </div>
+
+
+                        </div>
+
+                        <div class="ipoteka-right">
+                            
+                            <span class="ipoteka-right-heading">Программы ипотеки</span>
+
+                            <input hidden type="checkbox" name="ipoteka-dropdown-chb" id="ipoteka-dropdown-chb">
+
+                            <div>
+
+                                <label for="ipoteka-dropdown-chb" class="opoteka-dropdown">
+
+                                    <span>Все программы</span>
+
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.04028 10.2764L10.3332 12.5693C10.7237 12.9598 11.3569 12.9598 11.7474 12.5693L14.0403 10.2764M1.04028 16.2764L1.04028 6.27637C1.04028 3.51494 3.27886 1.27637 6.04028 1.27637L16.0403 1.27637C18.8017 1.27637 21.0403 3.51494 21.0403 6.27637V16.2764C21.0403 19.0378 18.8017 21.2764 16.0403 21.2764H6.04028C3.27886 21.2764 1.04028 19.0378 1.04028 16.2764Z" stroke="#0C474F" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+
+                                </label>
+
+
+
+                                <div class="opoteka-dropdown-content">
+
+                                    <label for="ipoteka-dropdown-chb"><span>Все программы</span></label>
+                                    <label for="ipoteka-dropdown-chb"><span>Стандартная</span></label>
+                                    <label for="ipoteka-dropdown-chb"><span>IT-ипотека</span></label>
+                                    <label for="ipoteka-dropdown-chb"><span>Семейная</span></label>
+                                    <label for="ipoteka-dropdown-chb"><span>Гос.поддержка</span></label>
+    
+                                </div>
+                                
+                            </div>
+
+
+
+                            <div class="ipoteka-search-wrap">
+                                <div class="ipoteka-search-heading">
+
+                                    <span class="uppercase">
+                                        Банк 
+                                        
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.9604 8.95001L13.4404 15.47C12.6704 16.24 11.4104 16.24 10.6404 15.47L4.12036 8.95001" stroke="#B6915D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+    
+                                    <span class="uppercase">
+                                        Ставка 
+    
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.9604 8.95001L13.4404 15.47C12.6704 16.24 11.4104 16.24 10.6404 15.47L4.12036 8.95001" stroke="#B6915D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+    
+                                    <span class="uppercase">
+                                        Первый взнос 
+    
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.9604 8.95001L13.4404 15.47C12.6704 16.24 11.4104 16.24 10.6404 15.47L4.12036 8.95001" stroke="#B6915D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+    
+                                </div>
+    
+                                <div class="ipoteka-search-results">
+    
+                                    <div class="ipoteka-search-result-item">
+                                        <span class="ipoteka-result-name">Сбербанк</span>
+                                        <span class="ipoteka-result-rate">5</span>
+                                        <span class="ipoteka-result-deposit">15</span>
+                                    </div>
+                                    
+                                </div>
+    
+                                <div class="ipoteka-search-results">
+    
+                                    <div class="ipoteka-search-result-item">
+                                        <span class="ipoteka-result-name">Сбербанк</span>
+                                        <span class="ipoteka-result-rate">5</span>
+                                        <span class="ipoteka-result-deposit">15</span>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="ipoteka-search-results">
+    
+                                    <div class="ipoteka-search-result-item">
+                                        <span class="ipoteka-result-name">Сбербанк</span>
+                                        <span class="ipoteka-result-rate">5</span>
+                                        <span class="ipoteka-result-deposit">15</span>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="ipoteka-search-results">
+    
+                                    <div class="ipoteka-search-result-item">
+                                        <span class="ipoteka-result-name">Сбербанк</span>
+                                        <span class="ipoteka-result-rate">5</span>
+                                        <span class="ipoteka-result-deposit">15</span>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="ipoteka-search-results">
+    
+                                    <div class="ipoteka-search-result-item">
+                                        <span class="ipoteka-result-name">Сбербанк</span>
+                                        <span class="ipoteka-result-rate">5</span>
+                                        <span class="ipoteka-result-deposit">15</span>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="ipoteka-search-results">
+    
+                                    <div class="ipoteka-search-result-item">
+                                        <span class="ipoteka-result-name">Сбербанк</span>
+                                        <span class="ipoteka-result-rate">5</span>
+                                        <span class="ipoteka-result-deposit">15</span>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="ipoteka-search-results">
+    
+                                    <div class="ipoteka-search-result-item">
+                                        <span class="ipoteka-result-name">Сбербанк</span>
+                                        <span class="ipoteka-result-rate">5</span>
+                                        <span class="ipoteka-result-deposit">15</span>
+                                    </div>
+    
+                                </div>
+                            </div>
+
+                            <span class="programms-found-wrap">
+                                 5
+                            </span>
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="howtobuy-besprocentnaya text-tab">
+
+                        <p>
+                            Программа беспроцентной рассрочки с первоначальным взносом от 30% до 31.12.2024.
+                            <br><br>
+                            Оплата ежемесячно или ежеквартально равными платежами.*
+                        </p>
+
+                        <span>*Точные условия применения программы уточняйте у вашего менеджера в офисе продаж.</span>
+
+                    </div>
+
+                    <div class="howtobuy-tradein text-tab">
+
+                        <p>
+                            Программа Трейд-ин. *
+                        </p>
+
+                        <span>*Точные условия применения программы уточняйте у вашего менеджера в офисе продаж.</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
         </section>
 
         

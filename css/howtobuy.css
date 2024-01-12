@@ -1,0 +1,380 @@
+#section-howtobuy-chb-01:checked ~ .section-howtobuy-wrap .horizontalscroll .section-scrollabale-tabs label:nth-child(1) ,
+#section-howtobuy-chb-02:checked ~ .section-howtobuy-wrap .horizontalscroll .section-scrollabale-tabs label:nth-child(2) ,
+#section-howtobuy-chb-03:checked ~ .section-howtobuy-wrap .horizontalscroll .section-scrollabale-tabs label:nth-child(3) ,
+#section-howtobuy-chb-04:checked ~ .section-howtobuy-wrap .horizontalscroll .section-scrollabale-tabs label:nth-child(4) {
+    color: var(--clr-primary-800);
+}
+
+#section-howtobuy-chb-01:checked ~ .section-howtobuy-wrap .horizontalscroll .section-scrollabale-tabs label:nth-child(1)::after ,
+#section-howtobuy-chb-02:checked ~ .section-howtobuy-wrap .horizontalscroll .section-scrollabale-tabs label:nth-child(2)::after ,
+#section-howtobuy-chb-03:checked ~ .section-howtobuy-wrap .horizontalscroll .section-scrollabale-tabs label:nth-child(3)::after ,
+#section-howtobuy-chb-04:checked ~ .section-howtobuy-wrap .horizontalscroll .section-scrollabale-tabs label:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--clr-primary-800);
+}
+
+input[name="section-howtobuy-radio"] {
+    display: none;
+}
+
+.section-howtobuy-wrap h1 {
+    margin-top: 4.625rem;
+    margin-bottom: 26px;
+    color: var(--clr-heading-1);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-howtobuy-wrap {
+    min-height: 600px;
+}
+
+.section-howtobuy-wrap {
+    position: relative;
+}
+
+.howtobuy-tab-content .text-tab p,
+.howtobuy-tab-content .text-tab span {
+    margin-top: 57px;
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-greyscale-800);
+    max-width: 60ch;
+    text-wrap: balance;
+}
+
+.howtobuy-tab-content .text-tab span {
+    display: block;
+    margin-top: 16px;
+    font-size: 12px;
+    text-wrap: unset;
+}
+
+/* copy me!! */
+.section-howtobuy-wrap > img {
+    position: absolute;
+    right: 0;
+    opacity: .7;
+    top: 60px;
+}
+
+.text-tab,.howtobuy-ipoteka {
+    display: none;
+}
+
+
+#section-howtobuy-chb-01:checked ~ .section-howtobuy-wrap .howtobuy-tab-content > div:nth-child(1) ,
+#section-howtobuy-chb-02:checked ~ .section-howtobuy-wrap .howtobuy-tab-content > div:nth-child(2) ,
+#section-howtobuy-chb-03:checked ~ .section-howtobuy-wrap .howtobuy-tab-content > div:nth-child(3) ,
+#section-howtobuy-chb-04:checked ~ .section-howtobuy-wrap .howtobuy-tab-content > div:nth-child(4) {
+    display: block;
+}
+
+#section-howtobuy-chb-02:checked ~ .section-howtobuy-wrap .howtobuy-illustration{
+    display: none;
+}
+
+.ipoteka-left .slider-wrap + .slider-wrap {
+    margin-top: 30px;
+}
+   
+
+.ipoteka-reset {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    color: var(--clr-primary-800);
+    font-family: PT Sans;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.0625rem;
+    gap: 10px;
+}
+
+
+#section-howtobuy-chb-02:checked ~ .section-howtobuy-wrap .howtobuy-tab-content > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 2.8125rem;
+    gap: 2rem;
+}
+
+.ipoteka-left {
+    outline: 1px solid var(--clr-greyscale-600);
+    padding: 2.5rem 3rem;
+}
+
+.opoteka-dropdown {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--clr-navy-blue-light);
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 14px;
+    margin-top: 20px;
+    border-bottom: 1px solid var(--clr-greyscale-600);
+}
+
+.ipoteka-right-heading {
+    color: var(--clr-primary-1000);
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.opoteka-dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    bottom: 0;
+    transform: translateY(100%);
+    border-radius: 1rem;
+    padding: 10px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+ 
+
+.opoteka-dropdown-content span {
+    padding-block: 10px;
+    border-bottom: 1px solid var(--clr-greyscale-600);
+    display: block;
+    margin-right: 8px;
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-navy-blue-dark);
+    padding-left: 8px;
+    border-radius: 4px;
+}
+
+.opoteka-dropdown-content span:last-child {
+    border: none;
+}
+
+.opoteka-dropdown-content span:hover {
+    background-color: var(--clr-greyscale-200);
+}
+
+#ipoteka-dropdown-chb:checked + div {
+    position: relative;
+}
+
+#ipoteka-dropdown-chb:checked + div .opoteka-dropdown-content {
+    display: block;
+}  
+
+.ipoteka-search-heading {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--clr-primary-600);
+}
+
+.ipoteka-search-results .ipoteka-search-result-item ,
+.ipoteka-search-heading {
+    display: grid;
+    grid-template-columns: minmax(auto, 3fr) minmax(auto, 1fr) minmax(auto, 1fr);
+}
+
+.ipoteka-search-results > .ipoteka-search-result-item  span:nth-child(n+2) {
+    text-align: center;
+    width: 100%;
+}
+
+.ipoteka-search-heading > span {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-greyscale-800);
+    font-family: PT Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    cursor: pointer;
+}
+
+.ipoteka-search-heading > span:first-child {
+    justify-content: start;
+}
+
+.ipoteka-search-heading > span,
+.ipoteka-search-results > .ipoteka-search-result-item  span{
+    white-space: nowrap;
+}
+
+.ipoteka-search-results .ipoteka-search-result-item span {
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    color: var(--clr-greyscale-800);
+    padding-top: 24px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid var(--clr-greyscale-400);
+}
+
+.ipoteka-result-rate::after {
+    content: ' %';
+}
+
+.ipoteka-result-deposit::before {
+    content: 'от ';
+}
+
+.ipoteka-result-deposit::after {
+    content: ' %';
+}
+
+.ipoteka-search-wrap {
+    max-height: 290px;
+    overflow-y: scroll;
+    padding-right: 20px;
+    margin-top: 50px;
+    border-right: 1px solid var(--clr-greyscale-600);
+}
+
+.ipoteka-search-wrap::-webkit-scrollbar{
+    width: 4px;
+}
+
+.ipoteka-search-wrap::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.ipoteka-search-wrap::-webkit-scrollbar-thumb {
+    background-color: var(--clr-primary-1000);
+}
+
+.programms-found-wrap {
+    margin-top: 30px;
+    display: block;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: var(--clr-primary-1000);
+}
+
+.programms-found-wrap::before {
+    content: 'Найдено программ  ';
+    display: inline-block;
+    padding-right: 4px;
+    color: var(--clr-navy-blue-dark); 
+}
+
+.ipoteka-left .slider-wrap > span {
+    padding-bottom: 1rem;
+    display: block;
+}
+
+.section-howtobuy {
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.howtobuy-background {
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    top: -1px;
+    object-fit: cover;
+    transition: opacity 200ms, height 550ms;
+}
+
+
+#section-howtobuy-chb-02:checked ~ .howtobuy-background {
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .section-howtobuy-wrap > img {
+        top: unset;
+        scale: .75;
+        transform-origin: 100% 100%;
+    }
+
+    .howtobuy-tab-content .text-tab p, .howtobuy-tab-content .text-tab span {
+        max-width: 50ch;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .section-howtobuy-wrap > img {
+        scale: .6;
+    }
+
+    .howtobuy-tab-content .text-tab p, .howtobuy-tab-content .text-tab span {
+        max-width: 45ch;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    .section-howtobuy-wrap > img {
+        scale: .5;
+    }
+
+    .howtobuy-tab-content .text-tab p, .howtobuy-tab-content .text-tab span {
+        max-width: 40ch;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .section-howtobuy-wrap > img {
+        opacity: 0;
+    }
+
+    .howtobuy-tab-content .text-tab p, .howtobuy-tab-content .text-tab span {
+        max-width: 50ch;
+    }
+
+    .section-howtobuy, 
+    .section-howtobuy > * {
+        max-height: 487px;
+    }
+
+    .howtobuy-tab-content .text-tab p, .howtobuy-tab-content .text-tab span {
+        color: black;
+        font-family: PT Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        max-width: 80%;
+        margin-top: 36px;
+    }
+
+
+}

@@ -1,0 +1,132 @@
+.section-promo-wrap {
+    display: grid;
+    width: var(--content-width);
+    margin: 4rem auto;
+}
+
+.section-promo-wrap .swiper {
+    overflow: visible   ;
+}
+
+.section-promo-wrap .swiper-button-prev {
+    transform: translate(-30px, -250%);
+}
+
+.section-promo-wrap .swiper-button-next {
+    transform: translate(30px, -250%) scaleX(-1);
+}
+
+.section-promo-wrap h2 {
+    font-family: Oswald;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: var(--clr-greyscale-800);
+    margin: 2rem 0;
+}
+
+.section-promo-swiper .swiper-wrapper {
+    width: var(--content-width);
+    gap: 1rem;
+}
+
+
+.section-promo-swiper::-webkit-scrollbar {
+    display: none;
+}
+
+.section-promo-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    cursor: grab;
+    scroll-behavior: auto;
+    height: 35rem;
+    width: 35rem;
+    margin-bottom: 3rem;
+}
+
+.section-promo-item div {
+    height: 10rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.promo-img {
+    width: 35rem;
+    height: 17rem;
+}
+
+.promo-date {
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-greyscale-400);
+}
+
+.section-promo-item h4 {
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-primary-800);
+}
+
+.section-promo-item p {
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #1D1D1B;
+    height: 7rem;
+    overflow: hidden;
+}
+
+.section-promo-item button {
+    background-color: white;
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--clr-primary-1000);
+    width: 158px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    border-radius: 2px;
+    border: 1px solid var(--clr-primary-600);
+    height: 44px;
+    cursor: pointer;
+}
+
+.section-promo-item button:hover {
+    background-color: var(--clr-btn-hover-bg);
+}
+
+.section-promo-item button:focus {
+    background-color: var(--clr-btn-focus-brdr);
+}
+
+@media only screen and (max-width: 560px) {
+
+    .section-promo-item {
+        width: 17rem;
+    }
+
+    .promo-img {
+        width: 17rem;
+    }
+}

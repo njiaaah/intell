@@ -3,7 +3,7 @@
     box-shadow: 0 0 0 100vmax #E9EAE5;
     clip-path: inset(0 -100vmax);
 }
-.section-rareformats-wrap h1 {
+.section-rareformats-wrap_h1 {
     margin-top: 58px;
     padding-top: 44px;
     position: relative;
@@ -15,7 +15,7 @@
     color: var(--clr-greyscale-800);
     width: fit-content;
 } 
-.section-rareformats-wrap h1 svg {
+.section-rareformats-wrap_h1_svg {
     position: absolute;
     right: -180px;
     bottom: -35px;
@@ -49,7 +49,7 @@ input[name="section-rare-formats-radio"] {
     gap: 2rem;
 }
 
-.section-rareformats-grid > img {
+.section-rareformats-grid_img {
     --_width: 447px;
     display: none;
     width: var(--_width);
@@ -59,13 +59,13 @@ input[name="section-rare-formats-radio"] {
 #section-rare-formats-chb-01:checked ~ .section-rareformats-grid > img:nth-of-type(1) ,
 #section-rare-formats-chb-02:checked ~ .section-rareformats-grid > img:nth-of-type(2) ,
 #section-rare-formats-chb-03:checked ~ .section-rareformats-grid > img:nth-of-type(3) ,
-#section-rare-formats-chb-01:checked ~ .section-rareformats-grid .rare-formats-info-wrap p:nth-of-type(1) ,
-#section-rare-formats-chb-02:checked ~ .section-rareformats-grid .rare-formats-info-wrap p:nth-of-type(2) ,
-#section-rare-formats-chb-03:checked ~ .section-rareformats-grid .rare-formats-info-wrap p:nth-of-type(3) {
+#section-rare-formats-chb-01:checked ~ .section-rareformats-grid .rare-formats-info-wrap_p:nth-of-type(1) ,
+#section-rare-formats-chb-02:checked ~ .section-rareformats-grid .rare-formats-info-wrap_p:nth-of-type(2) ,
+#section-rare-formats-chb-03:checked ~ .section-rareformats-grid .rare-formats-info-wrap_p:nth-of-type(3) {
     display: block;
 }
 
-.rare-formats-info-wrap p {
+.rare-formats-info-wrap_p {
     font-family: PT Sans;
     font-size: 18px;
     font-weight: 400;
@@ -76,7 +76,7 @@ input[name="section-rare-formats-radio"] {
     margin-top: 1.5625rem;
 }
 
-.rare-formats-info-wrap button {
+.rare-formats-info-wrap_button {
     top: 50%;
     transform: translateY(-50%);
     background-color: #E9EAE5;
@@ -90,7 +90,7 @@ input[name="section-rare-formats-radio"] {
 }
 
 
-.rare-formats-info-wrap img {
+.rare-formats-info-wrap_img {
     --_padding: calc((100vw - var(--content-width))/2);
     width: 457px;
     width: 457px;
@@ -99,14 +99,15 @@ input[name="section-rare-formats-radio"] {
     right: 0;
     bottom: 0;
     transform: translateX(var(--_padding));
+    transform: translateX(80px);
 }
 
 
 @media screen and (max-width: 1000px) {
-    .rare-formats-info-wrap img {
+    .rare-formats-info-wrap_img {
         display: none;
     }
-    .rare-formats-info-wrap button {
+    .rare-formats-info-wrap_button {
         transform: translateY(100%);
     }
 
@@ -118,12 +119,12 @@ input[name="section-rare-formats-radio"] {
         flex-direction: column;
     }
 
-    .section-rareformats-grid > img {
+    .rare-formats-info-wrap_img {
         width: 100%;
     }
 
     
-    .rare-formats-info-wrap button {
+    .rare-formats-info-wrap_button {
         position: static;
         transform: translateY(0);
         margin-bottom: 20px;
@@ -133,33 +134,34 @@ input[name="section-rare-formats-radio"] {
         padding-top: 0;
     }
 
-    .rare-formats-info-wrap p {
+    .rare-formats-info-wrap_p {
         margin-top: 0;
         margin-bottom: 32px;
     }
 }
 
 @media screen and (max-width: 560px) {
-    .section-rareformats-grid > img {
+    
+    .section-rareformats-grid_img {
         width: 100vw;
         transform: translateX(calc( -1 * ((100vw - var(--content-width))/2))) scaleX(1.01);
     }
     .section-rareformats-grid {
         gap: 0;
     }
-    .rare-formats-info-wrap p {
+    .rare-formats-info-wrap_p {
         margin-block: 35px;
         font-size: 14px;
         line-height: 17px;
     }
 
 
-    .section-rareformats-wrap h1 {
+    .section-rareformats-wrap_h1 {
         max-width: 10ch;
         margin-bottom: 70px;
     }
 
-    .section-rareformats-wrap h1 svg {
+    .section-rareformats-wrap_h1_svg {
         right: -85px;
         bottom: -65px;
     }

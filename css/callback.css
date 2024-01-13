@@ -5,7 +5,7 @@
     margin-top: 72px;
 }
 
-.section-callback-wrap h3 {
+.section-callback-wrap_h3 {
     font-family: Oswald;
     font-size: 34px;
     font-weight: 400;
@@ -16,7 +16,7 @@
     margin-bottom: 19px;
 }
 
-.callback-body > img {
+.callback-body_img {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -31,39 +31,37 @@
     position: relative;
 }
 
-.callback-body .bg-vectors {
+.bg-vectors {
     opacity: .075;
     display: flex;
     overflow-x: scroll;
 }
 
-.callback-body .bg-vectors svg {
+.bg-vectors_svg {
     min-height: 261px;
     min-width: 82px;
 }
 
-.callback-body .callback-content {
+.callback-content {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 20;
-}
-
-.callback-content {
     padding: 3.5rem 2.875rem ;
 }
 
-.callback-content form{
+
+.callback-content_form {
     display: flex;
     flex-direction: column;
     width: 224px;
 }
 
-.callback-content form input {
+.callback_form_input {
     margin-bottom: 19px;
 }
 
-.callback-content form button {
+.callback_form_button {
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -71,8 +69,8 @@
     gap: .5rem;
 }
 
-.callback-content form input::placeholder,
-.callback-content form input{
+.callback_form_input::placeholder,
+.callback_form_input{
     --_color: var(--clr-greyscale-800);
     font-family: PT Sans;
     font-size: 14px;
@@ -86,7 +84,7 @@
     border-bottom: 1px solid var( --_color);
 }
 
-.section-callback-wrap span{
+.section-callback-wrap_span{
     display: block;
     font-family: PT Sans;
     font-size: 12px;
@@ -101,23 +99,23 @@
 
 @media screen and (max-width: 760px) {
 
-    .callback-body > img {
+    .callback-body_img {
         display: none;
     }
 
-    .callback-content form{
+    .callback-content_form{
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    .callback-content form input::placeholder,
-    .callback-content form input    {
+    .callback_form_input::placeholder,
+    .callback_form_input    {
     --_color: var(--clr-primary-800);
     }   
 
     
-    .section-callback-wrap span{
+    .section-callback-wrap_span{
         margin-top: 20px;
         font-family: Montserrat;
         font-size: 10px;
@@ -129,7 +127,7 @@
         margin-top: 64px;
     }
 
-    .section-callback-wrap h3 {
+    .section-callback-wrap_h3 {
         font-size: 1.5rem;
         line-height: 1.75rem;
 
@@ -138,7 +136,7 @@
 }
 
 @media screen and (max-width: 560px) {
-    .section-callback-wrap h3 {
+    .section-callback-wrap_h3 {
         font-size: 1.5rem;
         line-height: 1.75rem;
         max-width: 10ch;

@@ -82,6 +82,48 @@ header ul li a{
 }
 
 
+/* BACK TO TOP BTN */
+
+#scroll {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  cursor: pointer;
+  width: 88px;
+  aspect-ratio: 1;
+  background-color: var(--clr-primary-800);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  /* transition: 100ms; */
+  z-index: 50;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: transform 100ms, background-color 100ms;
+}
+
+#scroll:hover {
+  background-color:var(--clr-primary-400);
+  opacity:1;filter:"alpha(opacity=100)";
+  -ms-filter:"alpha(opacity=100)";
+  scale: 1.05;
+}
+
+#scroll:active {
+  scale: .9;
+}
+
+@media screen and (max-width: 560px) {
+
+  #scroll {
+    width: 60px;
+  }
+  #scroll svg {
+    scale: .66;
+  }
+}
 
 @media screen and (max-width: 1000px) {
 

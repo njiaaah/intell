@@ -10,7 +10,7 @@
     <script src="lib/dragscroll.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
-    <script src="script/scrollers.js" defer></script>
+    <script src="script/backtotop.js" defer></script>
     <script src="script/sliders.js" defer></script>
     <script src="script/swipers.js" defer></script>
 
@@ -25,12 +25,21 @@
 
 </head>
 <body>
-    <main>
 
+    <!-- scroll to top -->
+    <a href="#" id="scroll">
+        <svg width="17" height="45" viewBox="0 0 17 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.69897 44.7601L8.69897 2.27737" stroke="#F9F0E5" stroke-width="2"/>
+            <path d="M1.11279 9.35785L8.699 1.77164L16.2852 9.35785" stroke="#F9F0E5" stroke-width="2"/>
+            </svg>
+            
+    </a>
+
+    <main>
         <!-- toggles filter menu on mobile and hides all other stuff -->
         <input type="checkbox" name="mobile-filter-inputs" id="mobile-filter-menu-toggle">
 
-        <header>
+        <header id="header">
 
             <input type="checkbox" name="header-menu" id="header-menu" hidden >
 

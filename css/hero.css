@@ -378,6 +378,13 @@
     background-position: 30%;
     position: relative;
   }
+
+  
+.hero-bottom-banner-left-item,
+.hero-bottom-banner-right-item-span {
+  white-space: wrap;
+}
+
   
 
 }

@@ -117,6 +117,10 @@ input[name="section-location-radio"] {
     grid-column-end: 2;
 }
 
+.section-location-grid-time {
+    white-space: nowrap;
+}
+
 
 .section-location-grid-1 > img,
 .section-location-grid-2 > img {

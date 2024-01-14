@@ -10,7 +10,7 @@ input[name="mobile-filter-inputs"],
     padding-bottom: 73px;
 }
 
-.section-filter-wrap h1 {
+.section-filter-wrap_h1 {
     font-family: Oswald;
     font-size: 42px;
     font-weight: 400;
@@ -381,7 +381,7 @@ input[name="mobile-filter-inputs"],
         gap: 4px;
     }
 
-    .section-filter-wrap h1 {
+    .section-filter-wrap_h1 {
         margin-bottom: 0;
         padding-bottom: 0;
         border-bottom: none;

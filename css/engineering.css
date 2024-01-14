@@ -1,11 +1,10 @@
-.section-engineering-wrap h1 {
+.section-engineering-wrap_h1 {
     font-family: Oswald;
     font-size: 42px;
     font-weight: 400;
     line-height: 46px;
     letter-spacing: 0.05em;
     color: var(--clr-greyscale-800);
-    
 }
 
 .section-engineering-wrap {
@@ -201,6 +200,14 @@ input[name="section-engineering-radio"] {
 }
 
 @media screen and (max-width: 730px) {
+
+    .section-engineering-wrap_h1 {
+        font-family: Oswald;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2.1875rem;
+        letter-spacing: 0.02em;
+    }
 
     .section-engineering-grid {
         flex-direction: column;

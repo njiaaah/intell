@@ -1,0 +1,320 @@
+@import url("header.css");
+/* second header  */
+@import url("hero.css");
+@import url("filter.css");
+@import url("footer.css");
+
+/*  */
+
+.section-filter {
+    --_bg-color:#E9EAE5;
+    background-color: var(--_bg-color);
+}
+
+input[name="catalogue-pages"]{
+    display: none;
+}
+
+footer {
+    margin-top: 0;
+}
+
+.filter-heading-wrap {
+    gap: 2rem;
+    padding-top: 60px;
+}
+
+.filter-type-scrollable-tabs {
+    display: none;
+}
+
+.filter-heading-wrap .filter-heading-wrap_h1 {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.catalogue-filter-label {
+    margin-top: 20px;
+    margin-bottom: .5rem;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+}
+.catalogue-floor-plan-labels {
+    display: flex;
+}
+.catalogue-page-tower-label,
+.catalogue-page-floor-label {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    color: var( --clr-navy-blue-light);
+    border: 2px solid var( --clr-navy-blue-light);
+    padding: .5rem 1rem;
+    transition: background-color 100ms, color 100ms;
+}
+
+.catalogue-page-floor-label {
+    transform: translateX(2px);
+}
+
+.filter-sliders-wrap {
+    margin-top: 60px;
+}
+
+/* radio logic */
+
+/* hide default filter with any other chb checked */
+#catalogue-page-floor:checked ~ .filter-sliders-wrap {display: none;}
+#catalogue-page-tower:checked ~ .filter-sliders-wrap {display: none;}
+
+#catalogue-page-floor:checked ~ .filter-results-grid {display: none;}
+#catalogue-page-tower:checked ~ .filter-results-grid {display: none;}
+
+#catalogue-page-floor:checked ~ .filter-show-more {display: none;}
+#catalogue-page-tower:checked ~ .filter-show-more {display: none;}
+
+/* hide 2,3 if 1 checked */
+#catalogue-page-filter:checked ~ .catalogue-floor-plan-wrap {display: none;}
+#catalogue-page-filter:checked ~ .catalogue-tower-plan-wrap {display: none;}
+
+/* hide 2 if 3 checked and vice versa */
+#catalogue-page-tower:checked ~ .catalogue-floor-plan-wrap .floor-select-swiper-wrap {display: none;}
+#catalogue-page-tower:checked ~ .catalogue-floor-plan-wrap .floor-plan-center {display: none;}
+#catalogue-page-floor:checked ~ .catalogue-floor-plan-wrap .towers-plan-wrap {display: none;}
+
+/* labels visual */
+
+#catalogue-page-tower:checked ~ .filter-heading-wrap .catalogue-page-tower-label ,
+#catalogue-page-floor:checked ~ .filter-heading-wrap .catalogue-page-floor-label {
+    color: var(--clr-greyscale-000);
+    background-color: var(--clr-navy-blue-light);
+}
+
+
+
+
+/* FLOOR PLAN */
+
+.floor-appart-card-wrap {
+    margin-top: 30px;
+}
+
+.catalogue-floor-plan-grid-wrap {
+    display: flex;
+    grid-template-columns: 105px 722px 280px ;
+    max-height: 45.125rem;
+    height: 45.125rem;
+}
+
+.floor-plan-center_img {
+    max-width: 45.125rem;
+    aspect-ratio: 1;
+}
+
+.floor-appart-card-wrap {
+    margin-left: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100%;
+    width: 288px;
+}
+
+.floor-appart-card-wrap_img {
+    width: 123px;
+    height: 162px;
+}
+
+.floor-appart-card-wrap_img-wrap {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+
+
+.floor-select-swiper {
+    overflow-y: scroll;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    overflow-x: hidden;
+    max-height: 96%;
+    width: 95px;
+    margin-top: 42px;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.floor-select-swiper-wrap {
+    position: relative;
+    transform: translateY(-42px);
+}
+
+.floor-select-swiper-wrap::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    transform: translateY(42px);
+    position: absolute;
+    background: linear-gradient(180deg,  var(--_bg-color), transparent);
+    z-index: 10;
+    pointer-events: none;
+}
+
+
+.floor-select-swiper::-webkit-scrollbar {
+    display: none;
+}
+
+.floor-select-swiper {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+
+.floor-swiper-item {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    width: 36px;
+    min-height: 36px;
+    border-radius: 100%;
+    outline: 1px solid var(--clr-primary-400);
+    font-family: PT Sans;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.4375rem;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 6px;
+    user-select: none;
+    transition: 200ms;
+}
+
+.floor-swiper-item:not(.floor-selected-item) {
+    transform: translateX(6px);
+}
+
+
+.floor-selected-item {
+    background-color: #96723F;
+    outline: none;
+    width: 48px;
+    min-height: 48px;
+    color: white;
+    white-space: nowrap;
+    position: relative;
+    width: fit-content;
+}
+
+.floor-selected-item::after {
+    content: 'этаж';
+    position: absolute;
+    white-space: nowrap;
+    right: 0;
+    color: #96723F;
+    width: fit-content;
+    transform: translateX(calc(100% + 10px));
+}
+
+/* TOEWR PLAN */
+
+.towers-plan-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 3.6875rem;
+    margin-top: 30px;
+}
+
+.tower-wrap {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+    place-items: center;
+}
+
+.tower-wrap:last-of-type{
+    margin-right: 22px;
+}
+
+.tower-item-label {
+    font-family: Oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: var(--clr-navy-blue-dark);
+}
+
+.tower-item-label::after {
+    content: ' корпус';
+}
+
+
+.mobile-filter-promo-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .catalogue-floor-plan-labels {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .filter-heading-wrap {
+        padding-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    .filter-sliders-wrap {
+        margin-top: 0;
+    }
+
+    .filter-mobile-controls-wrap {
+        margin-top: 1rem;
+    }
+
+    .filter-heading-wrap .filter-heading-wrap_h1 {
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 31px;
+        text-transform: lowercase;
+    }
+
+    .filter-heading-wrap .filter-heading-wrap_h1::first-letter {
+        text-transform: capitalize;
+    }
+
+    .filter-mobile-controls-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-filter-menu-toggle,
+    .mobile-filter-sort-toggle {
+        padding: 0.6875rem 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .mobile-filter-sort-toggle {
+        padding-inline: 16px 46px;
+    }
+
+    
+
+
+}

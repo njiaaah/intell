@@ -17,10 +17,120 @@
 
 .progress-container {
     display: grid;
-    grid-template-columns: repeat(256px, 4);
+    grid-template-columns: repeat(auto-fill, 256px);
+    margin: 3rem 0;
+    justify-content: space-between;
+    gap: 1rem;
+    row-gap: 2rem;
 }
 
 .progress-item {
     position: relative;
     border-radius: 4px;
+    width: 16rem;
+    height: 168px;
+}
+
+.progress-img {
+    width: 256px;
+    height: 168px;
+}
+
+.progress-wrap-top {
+    position: absolute;
+    top: 1rem;
+    padding: 0 1rem;
+    display: flex;
+    width: 256px;
+    justify-content: space-between;
+}
+
+.progress-item-date {
+    display: grid;
+    gap: 0.2rem;
+}
+
+.progress-item-date span {
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F9F0E5;
+}
+
+.progress-item-date h5 {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-primary-400);
+}
+
+.progress-item-button {
+    width: 95px;
+    height: 32px;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: var(--clr-primary-800);
+    font-family: PT Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    cursor: pointer;
+}
+
+.progress-item-button span::after {
+    content: '→';
+    padding-left: 0.5rem;
+    color: #124147;
+    font-size: 16px;
+}
+
+.progress-button {
+    width:211px;
+    height: 44px;
+    border: solid 2px var(--clr-primary-800);
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--clr-primary-1000);
+    background-color: white;
+    cursor: pointer;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    position: relative;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .progress-container {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 587px) {
+
+    .progress-container {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        justify-content: normal;
+    }
+
+    .progress-container::-webkit-scrollbar {
+        display: none;
+    }
 }

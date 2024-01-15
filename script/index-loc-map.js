@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', ()=>{
     if (document.querySelector('#map-index-location')) {
 
-let center = [55.6901834133405, 37.48737408782326];
-let mark_home = [55.687791,37.482797];
+let center = [55.780365,37.705982];
+let mark_home = [55.780070,37.703742];
 
 function init() {
   let map = new ymaps.Map('map-index-location', {
     center: center,
-    zoom: 12.5,
+    zoom: 16,
     controls: ['zoomControl']
   }, {
-    zoomControlPosition: { right: 50, top: 260 },
+    zoomControlPosition: { right: 50, bottom: 30 },
     zoomControlSize: 'auto'
   });
 
         objectManager = new ymaps.ObjectManager({
             // Чтобы метки начали кластеризоваться, выставляем опцию.
-           clusterize: true,
+           clusterize: false,
             // ObjectManager принимает те же опции, что и кластеризатор.
             gridSize: 64,
             // Макет метки кластера pieChart.
@@ -28,13 +28,13 @@ function init() {
 
 
     let placemark_home = new ymaps.Placemark(mark_home, {
-      hintContent: 'ЖК ИННОВАТОР',
-      balloonContent: 'ЖК ИННОВАТОР'
+      hintContent: 'ЖК ИНТЕЛЛИГЕНТ',
+      balloonContent: 'ЖК ИНТЕЛЛИГЕНТ'
     }, {
       iconLayout: "default#image",
-      iconImageHref: "./img/icons/map/Home_marker.svg",
-      iconImageSize: [30, 21],
-      iconImageOffset: [0, -35]
+      iconImageHref: "./img/location/Mark_home.svg",
+      iconImageSize: [24, 24],
+      iconImageOffset: [-15, -40]
     });
 		
 

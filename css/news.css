@@ -48,7 +48,7 @@
     gap: 1rem;
     flex-basis: 60%;
     overflow: hidden;
-    background: url(/img/news/back-news-info.svg);
+    background: url(../img/news/back-news-info.svg);
     background-color: white;
     background-size: 80%;
     background-repeat: no-repeat;

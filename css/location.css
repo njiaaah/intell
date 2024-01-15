@@ -157,17 +157,6 @@ input[name="section-location-radio"] {
     line-height: 23px;
 }
 
-.section-location-grid-map .map-img {
-    height: 100%;
-}
-
-.section-location-grid-map .map-img img {
-    
-    object-fit: cover;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
 
 .section-location-grid-map {
     position: relative;
@@ -420,4 +409,11 @@ input[name="map-markers"] {
         aspect-ratio: 1;
     }
 
+}
+
+/* map yandex */
+
+#map-index-location {
+    width: 100%;
+    height: 100%;
 }

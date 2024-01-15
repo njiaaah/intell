@@ -1,7 +1,7 @@
 .section-promo-wrap {
     display: grid;
     width: var(--content-width);
-    margin: 4rem auto;
+    margin: 100px auto 0 auto;
 }
 
 .section-promo-wrap .swiper {
@@ -28,7 +28,7 @@
     letter-spacing: 0.05em;
     text-align: left;
     color: var(--clr-greyscale-800);
-    margin: 2rem 0;
+    margin-bottom: 2rem;
 }
 
 .section-promo-swiper .swiper-wrapper {

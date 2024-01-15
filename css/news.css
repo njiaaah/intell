@@ -1,6 +1,6 @@
 .news-wrap {
     width: var(--content-width);
-    margin: 0 auto;
+    margin: 100px auto 0 auto;
 }
 
 .section-news {

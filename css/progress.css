@@ -1,6 +1,6 @@
 .progress-wrap {
     width: var(--content-width);
-    margin: 3rem auto;
+    margin: 100px auto 0 auto;
     display: grid;
 }
 

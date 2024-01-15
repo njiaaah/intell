@@ -83,6 +83,29 @@ const swiperPromo = new Swiper('.section-promo-swiper', {
 
   });
 
+const swiperNews = new Swiper('.section-news-swiper', {
+    slidesPerView: "auto",    
+
+    breakpoints: {
+        1000: {
+            spaceBetween: 34,
+        },
+        560: {
+            spaceBetween: 16,
+        },
+        320: {
+            spaceBetween: 8,
+        },
+    },
+
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+        draggable: true,
+      },
+
+  });
+
 
 // gallery swipers
 

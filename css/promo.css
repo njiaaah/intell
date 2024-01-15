@@ -52,6 +52,10 @@
     padding-bottom: 3rem;
 }
 
+.section-promo-item:active {
+    cursor: grabbing;
+}
+
 .promo-fd {
     display: flex;
     flex-direction: column;

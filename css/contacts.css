@@ -1,0 +1,234 @@
+.section-contacts h2 {
+    width: var(--content-width);
+    margin: 0 auto 2rem auto;
+    font-family: Oswald;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #3D4452;
+}
+
+.section-contacts {
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+#map-contacts-office-sale, #map-contacts-hq {
+    height: 565px;
+}
+
+.contacts-card-info {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    width: 80%;
+    border-radius: 16px;
+    background-color: white;
+    height: 18rem;
+    box-shadow: 0px 8px 8px 4px rgba(34, 60, 80, 0.07);
+}
+
+.contact-info {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0 0 2rem;
+}
+
+.contact-card-img {
+    flex-basis: 50%;
+    box-shadow: 0px 8px 8px 4px rgba(34, 60, 80, 0.07);
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.contact-card-img img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-info ol {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.contact-info li {
+    cursor: pointer;
+}
+
+input[name="contacts-tab-input"]{
+    display: none;
+}
+
+.contacts-img-logo {
+    background-color: #00468F;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+
+.contacts-img-logo img {
+    width: 60%;
+}
+
+.contact-text span:first-of-type,.contact-text a:first-of-type {
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3D4452;
+}
+
+.contact-text span, .contact-text a:last-of-type {
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3D4452;
+}
+
+.contacts-button {
+    background-color: var(--clr-primary-800);
+    border: none;
+    color: white;
+    font-family: Oswald;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 207px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.contacts-button:hover {
+    background-color: #FFA564;
+}
+
+.contacts-button:active {
+    background-color: var(--clr-primary-800);
+    border: 2px solid #FFA564;
+}
+
+/* logical tabs */
+
+#contacts-tab-1:checked ~ div .contacts-tab-2 {
+    display: none;
+}
+
+#contacts-tab-1:checked ~ div .contacts-img-logo {
+    display: none;
+}
+
+#contacts-tab-1:checked ~ #map-contacts-hq {
+    display: none;
+}
+
+#contacts-tab-2:checked ~ div .contacts-tab-1 {
+    display: none;
+}
+
+#contacts-tab-2:checked ~ div .contacts-img-tab-1 {
+    display: none;
+}
+
+#contacts-tab-2:checked ~ #map-contacts-office-sale {
+    display: none;
+}
+
+.con-tab-1, .con-tab-2 {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #828897;
+    padding-bottom: 1rem;
+}
+
+#contacts-tab-1:checked ~ div ol .con-tab-1 {
+    color: var(--clr-primary-800);
+    border-bottom: 2px solid var(--clr-primary-800);
+}
+
+#contacts-tab-2:checked ~ div ol .con-tab-2 {
+    color: var(--clr-primary-800);
+    border-bottom: 2px solid var(--clr-primary-800);
+}
+
+@media screen and (max-width: 720px) {
+
+    .contacts-card-info {
+        flex-direction: column;
+        height: fit-content;
+        transform: translate(50%, -20%);
+    }
+
+    .section-contacts [class*="zoom"] {
+        display: none;
+    }
+
+    .section-contacts {
+        padding-bottom: 15rem;
+    }
+
+    .contact-info {
+        order: 1;
+        background-color: white;
+        margin: 1rem auto 0 auto;
+        width: 90%;
+    }
+
+    .contacts-img-tab-1 img, .contacts-img-logo, .contact-card-img {
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 16px;
+        box-shadow: none;
+        min-height: 15rem;
+        max-height: 15rem;
+    }
+
+    .con-tab-1, .con-tab-2 {
+        font-size: 14px;
+    }
+
+    .contact-text span:first-of-type, .contact-text a:first-of-type {
+        font-size: 14px;
+        padding-right: 0.5rem;
+    }
+
+    .contact-text span, .contact-text a:last-of-type {
+        font-size: 14px;
+    }
+
+    .contact-text {
+        height: fit-content;
+    }
+
+    .contacts-button {
+        margin-bottom: 2rem;
+    }
+
+    .section-contacts {
+        padding-bottom: 25rem;
+    }
+
+}

@@ -298,4 +298,46 @@ section:has(+ #current),
     display: block;
 } */
 
+.i-404 {
+    display: grid;
+    width: var(--content-width);
+    margin: 3rem auto 0 auto;
+    place-content: center;
+    place-items: center;
+    gap: 1rem;
+}
 
+.i-404 h2 {
+    font-family: Oswald;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: var(--clr-primary-800);
+    text-transform: uppercase;
+}
+
+.i-404 p {
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #3D4452;
+}
+
+.i-404 img {
+    width: 100%;
+}
+
+.i-404 a {
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--clr-primary-800);
+}

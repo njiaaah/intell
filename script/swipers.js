@@ -277,5 +277,51 @@ const swiperProgress = new Swiper('.section-gallery-progress', {
 
   });
 
+const swiperPartners = new Swiper('.section-company-partners-swiper', {
+    slidesPerView: "auto",    
+
+    breakpoints: {
+        1000: {
+            spaceBetween: 34,
+        },
+        560: {
+            spaceBetween: 16,
+        },
+        320: {
+            spaceBetween: 16,
+        },
+    },
+
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+        draggable: true,
+      },
+
+  })
+
+const swiperAchi= new Swiper('.section-company-achiv-swiper', {
+    slidesPerView: "auto",    
+
+    breakpoints: {
+        1000: {
+            spaceBetween: 34,
+        },
+        560: {
+            spaceBetween: 16,
+        },
+        320: {
+            spaceBetween: 16,
+        },
+    },
+
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+        draggable: true,
+      },
+
+  });
+
 
 

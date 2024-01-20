@@ -324,7 +324,7 @@ const swiperAchi= new Swiper('.section-company-achiv-swiper', {
   });
 
 
-if (window.innerWidth < 656) {
+if (window.innerWidth <= 656) {
 const swiperDocuments= new Swiper('.section-documents-swiper', {
     slidesPerView: "auto",    
 

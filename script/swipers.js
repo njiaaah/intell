@@ -324,4 +324,30 @@ const swiperAchi= new Swiper('.section-company-achiv-swiper', {
   });
 
 
+if (window.innerWidth < 656) {
+const swiperDocuments= new Swiper('.section-documents-swiper', {
+    slidesPerView: "auto",    
+
+    breakpoints: {
+        1000: {
+            spaceBetween: 34,
+        },
+        560: {
+            spaceBetween: 16,
+        },
+        320: {
+            spaceBetween: 16,
+        },
+    },
+
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+        draggable: true,
+      },
+
+  });
+  }
+
+
 

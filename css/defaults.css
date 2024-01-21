@@ -27,6 +27,7 @@ body,html {
         --clr-greyscale-800: #575753;
 
         --clr-heading-1: #3D4452;
+        --clr-h2: #124147;
 
         /*   'PT Sans' & 'Oswald' */
 
@@ -55,6 +56,15 @@ h1 {
     font-weight: 500;
     line-height: 59px;
     letter-spacing: 0.05em;
+}
+
+h2 {
+    font-family: Oswald;
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.67em;
 }
 
 h3 {

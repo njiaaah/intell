@@ -24,6 +24,7 @@ input[name="mobile-filter-inputs"],
     color: var(--clr-navy-blue-dark);
     padding-bottom: 20px;
     border-bottom: 2px solid var(--clr-primary-800);
+    margin: 0.67em 0;
 }
 
 

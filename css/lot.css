@@ -444,7 +444,7 @@ input[name="lot-tab"], input[name="lot-tab-mobile"] {
 #lot-tab-mobile-3:checked ~ div .lot-swowcase-mobile-plan-img {display: none;}
 #lot-tab-mobile-3:checked ~ div .lot-swowcase-mobile-plan-floor-img {display: none;}
 
-.lot-showcase-mobile, .lot-tabs-mobile, .lot-showcase-mininfo-mobile, .lot-mobile-bottom {
+.lot-genplan-mobile, .lot-swowcase-mobile-img, .lot-tabs-mobile, .lot-showcase-mininfo-mobile, .lot-mobile-bottom {
     display: none;
 }
 
@@ -457,6 +457,10 @@ input[name="lot-tab"], input[name="lot-tab-mobile"] {
     .section-lot-container {
         margin: 0 auto;
         display: grid;
+    }
+
+    .lot-genplan-mobile {
+        display: block;
     }
 
     .section-lot-card {
@@ -518,6 +522,7 @@ input[name="lot-tab"], input[name="lot-tab-mobile"] {
 
     .lot-swowcase-mobile-img {
         width: 70%;
+        display: block;
     }
 
     .lot-swowcase-mobile-img img {

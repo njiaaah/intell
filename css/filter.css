@@ -655,5 +655,9 @@ input[name="mobile-filter-inputs"],
         margin-top: 30px;
     }
 
+    .section-filter-wrap_h1 {
+        white-space: wrap;
+    }
+
 
  }

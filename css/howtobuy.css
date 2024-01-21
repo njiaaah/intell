@@ -376,5 +376,9 @@ input[name="section-howtobuy-radio"] {
         margin-top: 36px;
     }
 
+    .section-howtobuy-wrap h2 {
+        font-size: 2em;
+    }
+
 
 }

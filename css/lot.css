@@ -67,6 +67,13 @@ input[name="lot-tab"], input[name="lot-tab-mobile"] {
     flex-direction: column;
     gap: 0.3rem;
     white-space: nowrap;
+    position: relative;
+}
+
+.lot-price-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
 }
 
 .lot-price {
@@ -77,11 +84,11 @@ input[name="lot-tab"], input[name="lot-tab-mobile"] {
     letter-spacing: 0.05em;
     text-align: left;
     color: #38626B;
+    margin-bottom: 0;
 }
 
 .lot-price::after {
-    content: '₽';
-    padding-left: 0.05em;
+    content: ' ₽';
 }
 
 .lot-mininfo {
@@ -119,8 +126,7 @@ input[name="lot-tab"], input[name="lot-tab-mobile"] {
 }
 
 .lot-floor::after {
-    content: 'этаж';
-    padding-left: 0.3rem;
+    content: ' этаж';
 }
 
 .lot-buttons {
@@ -366,13 +372,13 @@ input[name="lot-tab"], input[name="lot-tab-mobile"] {
 }
 
 .lot-showcase-mininfo-genplan-price::before {
-    content: 'от';
-    padding-right: 0.3rem;
+    content: 'от ';
+
 }
 
 .lot-showcase-mininfo-genplan-price::after {
-    content: 'млн ₽';
-    padding-left: 0.3rem;
+    content: ' млн ₽';
+
 }
 
 .lot-showcase-mininfo-genplan-button {
@@ -589,6 +595,10 @@ input[name="lot-tab"], input[name="lot-tab-mobile"] {
 
     .lot-genplan-mininfo, .lot-swowcase-mobile-plan-floor-img, .lot-swowcase-mobile-genplan-img {
         display: none;
+    }
+
+    .filter-item-promo {
+        top: 3rem;
     }
 
     .lot-swowcase-mobile-plan-img {

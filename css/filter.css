@@ -231,12 +231,52 @@ input[name="mobile-filter-inputs"],
     outline: 1px solid var(--clr-greyscale-200);
     padding: 1.875rem 1.5rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-item-old-price {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 140%;
+    text-decoration-line: line-through;
+    color: #828897;
+}
+
+.filter-item-price-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    position: relative;
+}
+
+.filter-item-old-price::after {
+    content: ' ₽';
+}
+
+.filter-item-square-price {
+    color: #38626b;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.filter-item-promo {
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+    background-color: #d51317;
+    padding: 0.375rem 0.8125rem;
+    display: flex;
 }
 
 .filter-result-item > img {
     width: fit-content;
     display: block;
-    margin: auto;
+    margin: auto auto 0 auto;
 }
 
 .filter-result-item .filter-icons-wrap {

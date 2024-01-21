@@ -1,5 +1,8 @@
+.section-advantages {
+    margin-top: 4rem;
+}
+
 .section-advantages-wrap h1 {
-    margin-top: 60px;
     margin-bottom: 66px;
     color: var(--clr-heading-1);
     width: fit-content;

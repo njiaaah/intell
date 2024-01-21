@@ -1,12 +1,13 @@
 footer {
     width: var(--content-width);
-    margin: 100px auto 0 auto;
+    margin: 0 auto;
     background-color: var(--clr-primary-600);
     box-shadow: 0 0 0 100vmax var(--clr-primary-600);
     clip-path: inset(0 -100vmax);
     color: white;
     display: grid;
     padding-bottom: 2rem;
+    margin-top: 4rem;
 }
 
 .footer-block-mobile-visible-logo, .footer-mobile-visible {

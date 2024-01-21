@@ -1,8 +1,10 @@
+.section-complex {
+  margin-top: 3rem;
+}
 
 .section-complex-wrap-genplan {
   background-image:  url('../img/hero/genplan.webp');
   height: 34rem;
-  margin-top: 2.8125rem ;
   position: relative;
   background-size: cover fill;
   background-position: 90%;

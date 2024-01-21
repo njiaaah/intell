@@ -1,8 +1,10 @@
+.section-callback {
+    margin-top: 6rem;
+}
+
 .section-callback-wrap {
-    height: 400px;
     width: min(927px, var(--content-width));
     margin: 0 auto;
-    margin-top: 72px;
 }
 
 .section-callback-wrap_h3 {

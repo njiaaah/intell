@@ -1,6 +1,10 @@
+.section-documents {
+    margin-top: 1rem;
+}
+
 .section-documents-wrap {
     width: var(--content-width);
-    margin: 1rem auto 0 auto;
+    margin: 0 auto;
 }
 
 .section-documents-wrap h2 {

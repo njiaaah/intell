@@ -5,9 +5,14 @@ input[name="mobile-filter-inputs"],
     display: none;
 }
 
+.section-filter-page {
+    margin-top: 0 !important;
+}
+
 .section-filter {
     background-color: var(--clr-greyscale-200);
     padding-bottom: 73px;
+    margin-top: 4rem;
 }
 
 .section-filter-wrap_h1 {

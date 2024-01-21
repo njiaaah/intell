@@ -1,6 +1,10 @@
+.section-progress {
+    margin-top: 4rem;
+}
+
 .progress-wrap {
     width: var(--content-width);
-    margin: 100px auto 0 auto;
+    margin: 0 auto;
     display: grid;
 }
 
